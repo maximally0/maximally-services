@@ -31,7 +31,7 @@ const HeroSection = () => {
           </p>
           
           <div className={`flex flex-col sm:flex-row gap-4 justify-center transition-all duration-700 delay-300 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <a href="#contact" className="pixel-button bg-maximally-blue text-white font-jetbrains font-bold py-3 px-6 md:py-4 md:px-8 text-center text-sm md:text-base">
+            <a href="/contact" className="pixel-button bg-maximally-blue text-white font-jetbrains font-bold py-3 px-6 md:py-4 md:px-8 text-center text-sm md:text-base">
               <span className="relative z-10">START YOUR JOURNEY</span>
             </a>
             <a href="/pricing" className="pixel-button bg-white hover:bg-white text-maximally-dark hover:text-maximally-dark font-jetbrains font-bold py-3 px-6 md:py-4 md:px-8 flex items-center justify-center gap-2 text-sm md:text-base">

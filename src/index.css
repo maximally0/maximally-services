@@ -108,6 +108,10 @@
            after:right-[-4px] after:bottom-[-4px] after:-z-10;
   }
 
+  .pixel-button.bg-white:hover {
+    @apply bg-maximally-dark text-white;
+  }
+
   .minecraft-border {
     @apply border-2 border-maximally-dark shadow-[4px_4px_0px_0px_rgba(26,26,26,1)]
            hover:text-maximally-blue transition-colors duration-200;
