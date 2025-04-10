@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Press+Start+2P&display=swap');
 
 @tailwind base;
@@ -108,16 +107,16 @@
            after:content-[''] after:absolute after:w-full after:h-full after:bg-maximally-dark 
            after:right-[-4px] after:bottom-[-4px] after:-z-10;
   }
-  
+
   .minecraft-border {
     @apply border-2 border-maximally-dark shadow-[4px_4px_0px_0px_rgba(26,26,26,1)];
   }
-  
+
   .pixel-card {
     @apply bg-white border-2 border-maximally-dark relative transition-all duration-300
            before:absolute before:content-[''] before:w-full before:h-full 
            before:bg-maximally-dark before:right-[-8px] before:bottom-[-8px] before:-z-10
-           hover:translate-x-[-4px] hover:translate-y-[-4px];
+           hover:translate-x-[-4px] hover:translate-y-[-4px] shadow-lg;
   }
 
   .pixel-card {
@@ -129,11 +128,7 @@
   }
 
   .pixel-card p {
-    @apply text-gray-700;
-  }
-
-  .pixel-card:hover {
-    @apply bg-maximally-dark transition-colors duration-300;
+    @apply text-gray-800 text-base leading-relaxed;
   }
 
   .pixel-card:hover h3,
@@ -150,7 +145,7 @@
     @apply hover:bg-maximally-dark hover:text-white;
   }
 
-  
+
   .pixel-divider {
     height: 8px;
     background-image: 
@@ -160,4 +155,3 @@
     background-size: 20px 8px;
   }
 }
-

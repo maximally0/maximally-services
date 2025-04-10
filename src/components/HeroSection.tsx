@@ -26,7 +26,7 @@ const HeroSection = () => {
             <span className="text-maximally-red">WITH AI</span>
           </h1>
           
-          <p className={`font-jetbrains text-gray-700 text-sm md:text-base mb-6 md:mb-10 max-w-2xl mx-auto transition-all duration-700 delay-200 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+          <p className={`font-jetbrains text-gray-800 text-base md:text-lg mb-6 md:mb-10 max-w-2xl mx-auto transition-all duration-700 delay-200 transform leading-relaxed ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             Pixelated perfection meets cutting-edge AI marketing. We turn your brand into the next level digital powerhouse.
           </p>
           

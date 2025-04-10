@@ -34,6 +34,7 @@ const ServicesSection = () => {
     {
       title: "AI STRATEGY",
       description: "Custom AI marketing strategies tailored to your business goals and target audience.",
+      className: "bg-white shadow-xl",
       icon: <Brain size={32} className="text-white" />,
       color: "bg-maximally-blue"
     },
