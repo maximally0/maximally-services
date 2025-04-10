@@ -28,17 +28,19 @@ const HeroSection = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className={`flex justify-center mb-6 md:mb-8 transition-all duration-700 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="inline-block border-2 border-maximally-dark p-3 md:p-4 bg-white">
-              <PixelLogo />
+              <div className="w-16 h-16 md:w-20 md:h-20">
+                <PixelLogo />
+              </div>
             </div>
           </div>
           
-          <h1 className={`font-press-start text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-6 leading-tight transition-all duration-700 delay-100 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+          <h1 className={`font-press-start text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 md:mb-6 leading-tight transition-all duration-700 delay-100 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <span className="text-maximally-dark">MAXIMIZE YOUR</span> <br />
             <span className="text-maximally-blue">DIGITAL PRESENCE</span> <br />
             <span className="text-maximally-red">WITH AI</span>
           </h1>
           
-          <p className={`font-jetbrains text-gray-700 text-base md:text-lg mb-6 md:mb-10 max-w-2xl mx-auto transition-all duration-700 delay-200 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+          <p className={`font-jetbrains text-gray-700 text-sm md:text-base mb-6 md:mb-10 max-w-2xl mx-auto transition-all duration-700 delay-200 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             Pixelated perfection meets cutting-edge AI marketing. We turn your brand into the next level digital powerhouse.
           </p>
           

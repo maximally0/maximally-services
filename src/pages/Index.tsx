@@ -10,13 +10,15 @@ import FooterSection from '@/components/FooterSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen w-full overflow-x-hidden">
+    <div className="min-h-screen w-full overflow-x-hidden max-w-[100vw]">
       <Navbar />
-      <HeroSection />
-      <ServicesSection />
-      <FeaturesSection />
-      <TestimonialsSection />
-      <CtaSection />
+      <main className="flex flex-col w-full">
+        <HeroSection />
+        <ServicesSection />
+        <FeaturesSection />
+        <TestimonialsSection />
+        <CtaSection />
+      </main>
       <FooterSection />
     </div>
   );
