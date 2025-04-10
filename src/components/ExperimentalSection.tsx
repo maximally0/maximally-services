@@ -1,8 +1,6 @@
-
 import React from 'react';
 import { Button } from './ui/button';
 import { Mail } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -54,7 +52,7 @@ const ExperimentalSection = () => {
         <h2 className="text-4xl md:text-5xl font-press-start text-maximally-dark text-center mb-6">
           Experimental Services
         </h2>
-        
+
         <p className="text-gray-800 text-center max-w-3xl mx-auto mb-16 font-jetbrains">
           These aren't your average agency offerings. We're experimenting with unconventional, high-leverage strategies that most people aren't even talking about yet. Since we're testing them in the wild, we don't charge for the marketing execution — just enough to cover costs.
         </p>
@@ -72,6 +70,7 @@ const ExperimentalSection = () => {
         <div className="mt-16 text-center">
           <Button 
             className="pixel-button bg-maximally-blue text-white px-8 py-4 font-press-start text-sm"
+            onClick={() => window.location.href = '/contact'}
           >
             <Mail className="mr-2 h-4 w-4" />
             Want In? Let's Talk
