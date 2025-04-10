@@ -121,12 +121,20 @@
            hover:bg-maximally-dark;
   }
   
+  .pixel-card {
+    @apply bg-white;
+  }
+
   .pixel-card h3 {
     @apply text-maximally-dark;
   }
 
   .pixel-card p {
     @apply text-gray-600;
+  }
+
+  .pixel-card svg {
+    @apply text-white;
   }
   
   .pixel-card:hover * {
