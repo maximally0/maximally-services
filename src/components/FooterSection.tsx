@@ -4,6 +4,7 @@ import { Mail, MessageSquare, Facebook, Instagram, Twitter, Linkedin, Send } fro
 import { useToast } from '@/components/ui/use-toast';
 import PixelLogo from './PixelLogo';
 import { cn } from '@/lib/utils';
+import { Link } from 'react-router-dom';
 
 const FooterSection = () => {
   const [email, setEmail] = useState('');
@@ -65,11 +66,11 @@ const FooterSection = () => {
             <ul className="space-y-4 font-jetbrains">
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-maximally-blue" />
-                <a href="mailto:hello@maximally.ai" className="text-gray-300 hover:text-white">hello@maximally.ai</a>
+                <a href="mailto:hello@maximally.in" className="text-gray-300 hover:text-white">hello@maximally.in</a>
               </li>
               <li className="flex items-center gap-3">
                 <MessageSquare size={16} className="text-maximally-red" />
-                <a href="tel:+11234567890" className="text-gray-300 hover:text-white">+1 (123) 456-7890</a>
+                <a href="tel:+919041260790" className="text-gray-300 hover:text-white">+91 9041260790</a>
               </li>
             </ul>
           </div>
@@ -78,9 +79,9 @@ const FooterSection = () => {
           <div>
             <h3 className="font-press-start text-sm mb-6">QUICK LINKS</h3>
             <ul className="space-y-3 font-jetbrains">
-              <li><a href="#services" className="text-gray-300 hover:text-white">Services</a></li>
-              <li><a href="#features" className="text-gray-300 hover:text-white">Features</a></li>
-              <li><a href="#testimonials" className="text-gray-300 hover:text-white">Results</a></li>
+              <li><Link to="/" className="text-gray-300 hover:text-white">Home</Link></li>
+              <li><Link to="/pricing" className="text-gray-300 hover:text-white">Pricing</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-white">Contact</Link></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Privacy Policy</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Terms of Service</a></li>
             </ul>
