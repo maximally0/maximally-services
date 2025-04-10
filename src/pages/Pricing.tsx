@@ -240,7 +240,7 @@ const Pricing = () => {
             {packageCards.map((pkg, index) => (
               <motion.div 
                 key={index}
-                className={`pixel-card relative ${pkg.bgColor} overflow-hidden`}
+                className={`pixel-card relative ${pkg.bgColor} overflow-hidden group hover:bg-maximally-dark transition-colors duration-300`}
                 whileHover={{ y: -5 }}
                 transition={{ duration: 0.2 }}
               >
@@ -253,17 +253,17 @@ const Pricing = () => {
                 )}
                 
                 <div className="p-8 bg-white bg-opacity-90">
-                  <h3 className="font-press-start text-lg mb-4">{pkg.title}</h3>
+                  <h3 className="font-press-start text-lg mb-4 group-hover:text-white transition-colors duration-300">{pkg.title}</h3>
                   <div className="mb-6">
-                    <span className="font-jetbrains text-3xl font-bold">{pkg.price}</span>
-                    <span className="text-gray-600 font-jetbrains">/month</span>
+                    <span className="font-jetbrains text-3xl font-bold group-hover:text-white transition-colors duration-300">{pkg.price}</span>
+                    <span className="text-gray-600 font-jetbrains group-hover:text-gray-200 transition-colors duration-300">/month</span>
                   </div>
                   
                   <ul className="space-y-3 mb-8">
                     {pkg.features.map((feature, i) => (
                       <li key={i} className="flex items-start gap-2 font-jetbrains">
-                        <Check size={18} className="text-green-500 mt-1 flex-shrink-0" />
-                        <span>{feature}</span>
+                        <Check size={18} className="text-green-500 group-hover:text-green-300 mt-1 flex-shrink-0 transition-colors duration-300" />
+                        <span className="group-hover:text-white transition-colors duration-300">{feature}</span>
                       </li>
                     ))}
                   </ul>
