@@ -117,12 +117,7 @@
     @apply bg-white border-2 border-maximally-dark relative transition-all duration-300
            before:absolute before:content-[''] before:w-full before:h-full 
            before:bg-maximally-dark before:right-[-8px] before:bottom-[-8px] before:-z-10
-           hover:translate-x-[-4px] hover:translate-y-[-4px]
-           hover:bg-maximally-dark;
-  }
-  
-  .pixel-card {
-    @apply bg-white;
+           hover:translate-x-[-4px] hover:translate-y-[-4px];
   }
 
   .pixel-card h3 {
@@ -133,12 +128,13 @@
     @apply text-gray-600;
   }
 
-  .pixel-card svg {
-    @apply text-white;
+  .pixel-card:hover {
+    @apply bg-maximally-dark;
   }
-  
-  .pixel-card:hover * {
-    @apply text-white transition-colors duration-300;
+
+  .pixel-card:hover h3,
+  .pixel-card:hover p {
+    @apply text-white;
   }
 
   .pixel-card:hover svg {
