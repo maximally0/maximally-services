@@ -10,7 +10,7 @@ import FooterSection from '@/components/FooterSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen w-full overflow-x-hidden">
       <Navbar />
       <HeroSection />
       <ServicesSection />

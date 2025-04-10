@@ -120,6 +120,19 @@
            hover:translate-x-[-4px] hover:translate-y-[-4px];
   }
   
+  /* Fix hover states on pixel cards */
+  .pixel-card:hover {
+    @apply bg-white text-maximally-dark;
+  }
+  
+  .pixel-card:hover h3 {
+    @apply text-maximally-dark;
+  }
+  
+  .pixel-card:hover p {
+    @apply text-gray-600;
+  }
+  
   .pixel-divider {
     height: 8px;
     background-image: 
@@ -129,3 +142,4 @@
     background-size: 20px 8px;
   }
 }
+
