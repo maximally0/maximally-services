@@ -1,0 +1,44 @@
+Add a new section titled: "Experimental Services"
+
+Intro paragraph:
+"These aren’t your average agency offerings. We’re experimenting with unconventional, high-leverage strategies that most people aren’t even talking about yet. Since we’re testing them in the wild, we don’t charge for the marketing execution — just enough to cover costs. For a custom quote, reach out to us at rishul@reachroot.xyz."
+
+Add the following 8 service cards:
+
+1. Interactive Quiz Funnels  
+Description: We build Buzzfeed-style quizzes that feel native and boost engagement. Perfect for supplements, SaaS, and lead gen.  
+Tagline: “Convert curiosity into conversions.”
+
+2. Owned Media Launchpads  
+Description: We help brands become mini-media empires through niche blogs, newsletters, or podcasts. Long-term trust > short-term ads.  
+Tagline: “Be the authority, not just the ad.”
+
+3. Lifecycle & Retention Systems  
+Description: Post-sale automation through WhatsApp, email, and CRM that brings customers back — again and again.  
+Tagline: “We don’t just help you get customers. We help you keep them.”
+
+4. Domain-Specific UGC  
+Description: Influencer marketing, but make it smart. We get real experts — doctors, coaches, consultants — to talk about your brand.  
+Tagline: “Because trust sells better than TikTok trends.”
+
+5. Micro-Community Creation  
+Description: We help brands build small, focused WhatsApp or Discord groups of super fans and early adopters — insane for engagement and retention.  
+Tagline: “Build your own cult. In a good way.”
+
+6. Landing Page-Only Funnels  
+Description: No full website? No problem. We create laser-focused landing pages with psychological copy and proven conversion systems.  
+Tagline: “One page. All gas, no friction.”
+
+7. Conversational Lead Capture  
+Description: Replace your boring forms with chatbot-style interactive flows to capture leads in a more human, engaging way.  
+Tagline: “Talk, don’t type. Convert better.”
+
+8. Dark Social Content Strategy  
+Description: We create content designed to be shared in DMs, private groups, and communities — where trust is highest.  
+Tagline: “We market where the algorithm can’t follow.”
+
+Add a call-to-action button:  
+Text: "Want In? Let's Talk" 
+
+Add a disclaimer line:  
+"Experimental services are offered at cost. Limited slots available each month."
