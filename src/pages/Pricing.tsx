@@ -308,9 +308,9 @@ const Pricing = () => {
           </motion.div>
           
           <motion.div className="mt-20 text-center" variants={itemVariants}>
-            <div className="pixel-card p-10 bg-gray-50">
+            <div className="pixel-card bg-white p-10">
               <Trophy size={48} className="text-maximally-blue mx-auto mb-4" />
-              <h2 className="font-press-start text-2xl mb-4 text-zinc-500">NEED A CUSTOM PACKAGE?</h2>
+              <h2 className="font-press-start text-2xl mb-4">NEED A CUSTOM PACKAGE?</h2>
               <p className="font-jetbrains text-gray-600 mb-8 max-w-2xl mx-auto">
                 We understand that every business is unique. Let's create a custom solution that fits your specific needs and budget.
               </p>
