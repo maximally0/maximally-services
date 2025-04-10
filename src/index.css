@@ -120,18 +120,19 @@
            hover:translate-x-[-4px] hover:translate-y-[-4px];
   }
   
-  /* Fix hover states on pixel cards */
-  .pixel-card:hover {
-    @apply bg-white text-maximally-dark;
-  }
-  
-  .pixel-card:hover h3 {
-    @apply text-maximally-dark;
-  }
-  
-  .pixel-card:hover p {
-    @apply text-gray-600;
-  }
+/* FIXED hover states on pixel cards with dark mode support */
+.pixel-card:hover {
+  @apply bg-white text-gray-900 border-gray-900 dark:bg-gray-900 dark:text-white dark:border-white;
+}
+
+.pixel-card:hover h3 {
+  @apply text-gray-900 dark:text-white;
+}
+
+.pixel-card:hover p {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
   
   .pixel-divider {
     height: 8px;

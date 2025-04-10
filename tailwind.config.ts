@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -24,6 +23,9 @@ export default {
     },
     extend: {
       colors: {
+        // 👇 Add this so `border-maximally-dark` etc. works
+        'maximally-dark': '#1A1A1A',
+
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
