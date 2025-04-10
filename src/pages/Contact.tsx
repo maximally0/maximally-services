@@ -1,54 +1,49 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
 import { Mail, Phone } from 'lucide-react';
-
 const Contact = () => {
   // Animation variants
   const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: { 
+    hidden: {
+      opacity: 0
+    },
+    visible: {
       opacity: 1,
-      transition: { 
+      transition: {
         when: "beforeChildren",
         staggerChildren: 0.1,
         duration: 0.3
       }
     }
   };
-
   const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } }
+    hidden: {
+      y: 20,
+      opacity: 0
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5
+      }
+    }
   };
-
-  return (
-    <div className="min-h-screen bg-white">
+  return <div className="min-h-screen bg-white">
       <Navbar />
       
-      <motion.div 
-        className="pt-32 pb-20 px-6"
-        initial="hidden"
-        animate="visible"
-        variants={containerVariants}
-      >
+      <motion.div className="pt-32 pb-20 px-6" initial="hidden" animate="visible" variants={containerVariants}>
         <div className="container mx-auto max-w-4xl">
-          <motion.div 
-            className="text-center mb-16"
-            variants={itemVariants}
-          >
+          <motion.div className="text-center mb-16" variants={itemVariants}>
             <h1 className="font-press-start text-3xl md:text-4xl text-maximally-dark mb-4">GET IN TOUCH</h1>
             <p className="font-jetbrains text-gray-600 max-w-2xl mx-auto">
               Have questions about our services or want to work together? Reach out to us!
             </p>
           </motion.div>
           
-          <motion.div
-            className="bg-white minecraft-border p-10 text-center"
-            variants={itemVariants}
-          >
+          <motion.div className="bg-white minecraft-border p-10 text-center" variants={itemVariants}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="flex flex-col items-center p-6 border-2 border-maximally-dark bg-blue-50">
                 <Mail size={48} className="text-maximally-blue mb-6" />
@@ -68,18 +63,13 @@ const Contact = () => {
             </div>
             
             <div className="mt-12 max-w-xl mx-auto">
-              <p className="font-jetbrains text-gray-600">
-                We're based in Bangalore, India, and work with clients all over the country. 
-                Reach out to discuss how we can help transform your digital marketing.
-              </p>
+              
             </div>
           </motion.div>
         </div>
       </motion.div>
       
       <FooterSection />
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
