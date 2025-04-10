@@ -1,38 +1,24 @@
-
 import React, { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import PixelLogo from './PixelLogo';
-
 const HeroSection = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-
   useEffect(() => {
     setIsLoaded(true);
   }, []);
-
-  return (
-    <section className="relative pt-20 md:pt-32 pb-16 md:pb-20 overflow-hidden">
+  return <section className="relative pt-20 md:pt-32 pb-16 md:pb-20 overflow-hidden">
       {/* Background pixel grid pattern */}
       <div className="absolute inset-0 opacity-5 pointer-events-none">
         <div className="w-full h-full grid grid-cols-[repeat(20,1fr)] grid-rows-[repeat(20,1fr)]">
-          {Array.from({ length: 400 }).map((_, i) => (
-            <div 
-              key={i} 
-              className={`${Math.random() > 0.8 ? 'bg-maximally-blue' : Math.random() > 0.5 ? 'bg-maximally-red' : 'bg-maximally-dark'} opacity-${Math.floor(Math.random() * 50) + 10}`}
-            ></div>
-          ))}
+          {Array.from({
+          length: 400
+        }).map((_, i) => <div key={i} className={`${Math.random() > 0.8 ? 'bg-maximally-blue' : Math.random() > 0.5 ? 'bg-maximally-red' : 'bg-maximally-dark'} opacity-${Math.floor(Math.random() * 50) + 10}`}></div>)}
         </div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 relative">
         <div className="max-w-3xl mx-auto text-center">
-          <div className={`flex justify-center mb-6 md:mb-8 transition-all duration-700 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <div className="inline-block border-2 border-maximally-dark p-3 md:p-4 bg-white">
-              <div className="w-16 h-16 md:w-20 md:h-20">
-                <PixelLogo />
-              </div>
-            </div>
-          </div>
+          
           
           <h1 className={`font-press-start text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 md:mb-6 leading-tight transition-all duration-700 delay-100 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <span className="text-maximally-dark">MAXIMIZE YOUR</span> <br />
@@ -57,8 +43,6 @@ const HeroSection = () => {
       </div>
       
       <div className="pixel-divider w-full mt-12 md:mt-20"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
