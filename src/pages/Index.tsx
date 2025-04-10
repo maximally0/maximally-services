@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 
 import FeaturesSection from '@/components/FeaturesSection';
+import ExperimentalSection from '@/components/ExperimentalSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CtaSection from '@/components/CtaSection';
 import FooterSection from '@/components/FooterSection';
@@ -15,6 +16,7 @@ const Index = () => {
       <main className="flex flex-col w-full">
         <HeroSection />
         <FeaturesSection />
+        <ExperimentalSection />
         <TestimonialsSection />
         <CtaSection />
       </main>
