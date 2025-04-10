@@ -113,10 +113,10 @@
   }
 
   .pixel-card {
-    @apply bg-white border-2 border-maximally-dark relative transition-all duration-300
+    @apply bg-white border-2 border-maximally-dark relative transition-transform duration-300
            before:absolute before:content-[''] before:w-full before:h-full 
            before:bg-maximally-dark before:right-[-8px] before:bottom-[-8px] before:-z-10
-           hover:translate-x-[-4px] hover:translate-y-[-4px] shadow-lg;
+           hover:translate-y-[-8px] shadow-lg;
   }
 
   .pixel-card {
