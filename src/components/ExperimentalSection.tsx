@@ -69,12 +69,14 @@ const ExperimentalSection = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <Button 
-            className="pixel-button bg-maximally-blue text-white px-8 py-4 font-press-start text-sm"
-          >
-            <Mail className="mr-2 h-4 w-4" />
-            Want In? Let's Talk
-          </Button>
+          <Link to="/contact">
+            <Button 
+              className="pixel-button bg-maximally-blue text-white px-8 py-4 font-press-start text-sm"
+            >
+              <Mail className="mr-2 h-4 w-4" />
+              Want In? Let's Talk
+            </Button>
+          </Link>
           <p className="mt-6 text-sm text-gray-600 font-jetbrains">
             Experimental services are offered at cost. Limited slots available each month.
           </p>

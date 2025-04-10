@@ -189,7 +189,21 @@
   }
 
   .pixel-card p {
-    @apply text-gray-800 text-base leading-relaxed;
+    @apply text-gray-800 text-base leading-relaxed break-words;
+  }
+
+  @media (max-width: 640px) {
+    .pixel-card {
+      @apply p-4;
+    }
+    
+    .pixel-card h3 {
+      @apply text-sm;
+    }
+    
+    .pixel-card p {
+      @apply text-sm;
+    }
   }
 
   .pixel-button {

@@ -68,6 +68,19 @@ const Contact = () => {
                   @maximally.in
                 </a>
               </div>
+
+              <div className="flex flex-col items-center p-6 border-2 border-maximally-dark bg-green-50">
+                <MessageSquare size={48} className="text-green-600 mb-6" />
+                <h2 className="font-press-start text-xl mb-3">CHAT WITH US</h2>
+                <a 
+                  href="https://wa.me/919041260790?text=Hey%20I'm%20interested%20in%20your%20services" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="font-jetbrains text-lg contact-link"
+                >
+                  WhatsApp
+                </a>
+              </div>
             </div>
 
             <div className="mt-12 max-w-xl mx-auto">
