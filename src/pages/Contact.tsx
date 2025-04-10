@@ -44,11 +44,11 @@ const Contact = () => {
           </motion.div>
 
           <motion.div className="bg-white minecraft-border p-10 text-center" variants={itemVariants}>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-              <div className="flex flex-col items-center p-6 border-2 border-maximally-dark bg-blue-50">
-                <Mail size={48} className="text-maximally-blue mb-6" />
-                <h2 className="font-press-start text-xl mb-3">EMAIL US</h2>
-                <a href="mailto:hello@maximally.in" className="font-jetbrains text-lg contact-link">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
+              <div className="flex flex-col items-center p-4 sm:p-6 border-2 border-maximally-dark bg-blue-50">
+                <Mail size={36} className="text-maximally-blue mb-4 sm:mb-6" />
+                <h2 className="font-press-start text-lg sm:text-xl mb-2 sm:mb-3">EMAIL US</h2>
+                <a href="mailto:hello@maximally.in" className="font-jetbrains text-base sm:text-lg contact-link break-all">
                   hello@maximally.in
                 </a>
               </div>

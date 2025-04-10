@@ -65,6 +65,8 @@ const Navbar = () => {
           <div className="md:hidden absolute top-full left-0 w-full bg-white border-t border-maximally-dark border-opacity-10 shadow-lg">
             <div className="flex flex-col items-center py-4">
               <NavLink to="/pricing" mobile onClick={() => setIsOpen(false)}>Our Services</NavLink>
+              <NavLink to="/experimentalservices" mobile onClick={() => setIsOpen(false)}>Experimental</NavLink>
+              <NavLink to="/our-story" mobile onClick={() => setIsOpen(false)}>Our Story</NavLink>
               {location.pathname === '/' ? (
                 <>
                   <NavLink href="#features" mobile onClick={() => setIsOpen(false)}>Features</NavLink>

@@ -20,7 +20,7 @@ const Testimonial = ({ quote, author, company, rating, result, isActive }: Testi
         isActive ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
       )}
     >
-      <div className="bg-white p-8 minecraft-border h-full flex flex-col justify-between">
+      <div className="bg-white p-4 sm:p-8 minecraft-border h-full flex flex-col justify-between">
         <div>
           <div className="flex mb-4">
             {Array.from({ length: 5 }).map((_, i) => (
