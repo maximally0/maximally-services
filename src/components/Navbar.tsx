@@ -39,7 +39,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden lg:flex space-x-8">
           <NavLink to="/pricing">Our Services</NavLink>
           <NavLink to="/experimentalservices">Experimental</NavLink>
           {location.pathname === '/' ? (

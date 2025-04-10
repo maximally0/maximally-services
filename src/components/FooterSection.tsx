@@ -4,16 +4,14 @@ import { Link } from 'react-router-dom';
 
 const FooterSection = () => {
   const socialLinks = [
-    { icon: <Facebook size={20} />, label: 'Facebook', href: '#' },
     { icon: <Instagram size={20} />, label: 'Instagram', href: 'https://www.instagram.com/maximally.in/' },
-    { icon: <Twitter size={20} />, label: 'Twitter', href: '#' },
     { icon: <Linkedin size={20} />, label: 'LinkedIn', href: 'https://www.linkedin.com/company/maximallysupplements' },
   ];
 
   return (
     <footer id="contact" className="bg-maximally-dark text-white py-20">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
           {/* Column 1 - About */}
           <div>
             <div className="mb-6">
