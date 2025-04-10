@@ -14,7 +14,7 @@ const ServiceCard = ({ title, description, icon, color }: ServiceCardProps) => {
   
   return (
     <div 
-      className="pixel-card p-6 h-full"
+      className="pixel-card p-6 h-full bg-white"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

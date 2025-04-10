@@ -1,12 +1,11 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Check, ArrowRight, Package, Star, Trophy, Globe, Instagram, Search, Target, FileText, Video, Zap } from 'lucide-react';
+import { Check, ArrowRight, Package, Star, Globe, Instagram, Search, Target, FileText, Video, Zap } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 interface PricingItem {
   name: string;
@@ -143,7 +142,6 @@ const Pricing = () => {
     }
   };
 
-  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { 
@@ -234,7 +232,6 @@ const Pricing = () => {
             </p>
           </motion.div>
           
-          {/* Main Package Cards */}
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20"
             variants={itemVariants}
@@ -254,7 +251,7 @@ const Pricing = () => {
                   </div>
                 )}
                 
-                <div className="p-8">
+                <div className="p-8 bg-white bg-opacity-90">
                   <h3 className="font-press-start text-lg mb-4">{pkg.title}</h3>
                   <div className="mb-6">
                     <span className="font-jetbrains text-3xl font-bold">{pkg.price}</span>
@@ -284,41 +281,26 @@ const Pricing = () => {
             ))}
           </motion.div>
           
-          {/* Service Categories */}
-          <motion.div variants={itemVariants}>
-            <Tabs defaultValue="packages" onValueChange={setActiveCategory} className="w-full">
-              <div className="border-b-2 border-maximally-dark mb-8">
-                <h2 className="font-press-start text-2xl mb-6">ALL SERVICES</h2>
-                <TabsList className="bg-transparent w-full flex overflow-x-auto pb-2 space-x-2">
-                  {Object.entries(categories).map(([key, category]) => (
-                    <TabsTrigger 
-                      key={key} 
-                      value={key}
-                      className={`rounded-none border-2 border-transparent px-4 py-2 font-jetbrains data-[state=active]:border-b-2 data-[state=active]:border-maximally-blue data-[state=active]:bg-blue-50 whitespace-nowrap flex-shrink-0`}
-                    >
-                      {category.title}
-                    </TabsTrigger>
-                  ))}
-                </TabsList>
-              </div>
-              
+          <motion.div variants={itemVariants} className="bg-white minecraft-border p-6">
+            <h2 className="font-press-start text-2xl mb-6">ALL SERVICES</h2>
+            
+            <Accordion type="single" collapsible className="w-full">
               {Object.entries(categories).map(([key, category]) => (
-                <TabsContent key={key} value={key}>
-                  <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-                  >
-                    {category.items.map((item, i) => (
-                      <motion.div 
-                        key={i}
-                        className={`border-2 border-maximally-dark relative ${category.bgColor} hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform`}
-                        whileHover={{ scale: 1.02 }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        <div className="p-6">
-                          <div className="flex justify-between items-center mb-3">
+                <AccordionItem key={key} value={key} className="border-b border-gray-200">
+                  <AccordionTrigger className="py-4 flex items-center">
+                    <div className={`mr-3 p-2 rounded-full ${category.bgColor}`}>
+                      {category.icon}
+                    </div>
+                    <span className="font-jetbrains font-medium">{category.title}</span>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-2">
+                      {category.items.map((item, i) => (
+                        <div 
+                          key={i}
+                          className={`border-2 border-maximally-dark p-4 ${category.bgColor} hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform bg-white bg-opacity-90`}
+                        >
+                          <div className="flex justify-between items-center mb-2">
                             <h3 className="font-jetbrains font-bold">{item.name}</h3>
                             <span className={`font-jetbrains font-bold ${category.color}`}>{item.price}</span>
                           </div>
@@ -326,15 +308,14 @@ const Pricing = () => {
                             <p className="text-gray-600 font-jetbrains text-sm">{item.description}</p>
                           )}
                         </div>
-                      </motion.div>
-                    ))}
-                  </motion.div>
-                </TabsContent>
+                      ))}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
               ))}
-            </Tabs>
+            </Accordion>
           </motion.div>
           
-          {/* CTA Section */}
           <motion.div 
             className="mt-20 text-center"
             variants={itemVariants}

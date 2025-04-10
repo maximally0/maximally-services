@@ -49,25 +49,25 @@ const TestimonialsSection = () => {
   
   const testimonials = [
     {
-      quote: "Maximally transformed our digital presence with their AI-powered approach. Our engagement metrics are through the roof!",
-      author: "SARAH JOHNSON",
-      company: "TechStart Inc.",
+      quote: "Maximally ne hamari digital presence ko ekdum transform kar diya. Their AI-powered approach is truly revolutionary for our brand!",
+      author: "PRIYA SHARMA",
+      company: "TechStart India",
       rating: 5,
-      result: "312% increase in qualified leads within 3 months"
+      result: "3 mahine mein 312% increase in qualified leads"
     },
     {
-      quote: "The pixel-perfect designs combined with AI-driven strategies gave our brand the unique edge we needed in a crowded market.",
-      author: "DAVID CHEN",
-      company: "Innovate Solutions",
+      quote: "The pixel-perfect designs combined with AI strategies gave our brand a competitive edge in the crowded Indian market. Totally worth it!",
+      author: "VIKRAM MEHTA",
+      company: "Innovate Solutions Pvt Ltd",
       rating: 5,
-      result: "278% ROI on marketing spend"
+      result: "278% ROI on marketing spend with outstanding customer response"
     },
     {
-      quote: "Working with Maximally was a game-changer. Their data-driven approach helped us identify and capture market opportunities we didn't even know existed.",
-      author: "ALEX RODRIGUEZ",
-      company: "Growth Partners",
+      quote: "Maximally ke saath kaam karna was a game-changer for our startup. Their data-driven approach helped us identify opportunities we didn't even know existed.",
+      author: "ANJALI PATEL",
+      company: "Growth Ventures India",
       rating: 4,
-      result: "48% reduction in customer acquisition cost"
+      result: "48% reduction in customer acquisition cost within first quarter"
     }
   ];
 
