@@ -44,7 +44,7 @@
 /* Fix for service cards hover states - using 25% transparency on hover background */
 .pixel-card:hover {
   background-color: rgba(255, 255, 255, 0.75);
-  color: #1A1A1A;
+  color: #f1f1f13b;
 }
 
 /* Ensure text remains visible during hover */
