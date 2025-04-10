@@ -117,7 +117,31 @@
     @apply bg-white border-2 border-maximally-dark relative transition-all duration-300
            before:absolute before:content-[''] before:w-full before:h-full 
            before:bg-maximally-dark before:right-[-8px] before:bottom-[-8px] before:-z-10
-           hover:translate-y-[-8px] hover:text-maximally-red shadow-lg;
+           hover:translate-y-[-8px];
+  }
+
+  .pixel-card:hover {
+    @apply text-white;
+  }
+
+  .pixel-card:hover h3 {
+    @apply text-white;
+  }
+
+  .pixel-card:hover p {
+    @apply text-gray-200;
+  }
+
+  .pixel-card:nth-child(3n+1):hover {
+    @apply bg-maximally-blue;
+  }
+
+  .pixel-card:nth-child(3n+2):hover {
+    @apply bg-maximally-red;
+  }
+
+  .pixel-card:nth-child(3n):hover {
+    @apply bg-maximally-dark;
   }
 
   .text-hover-effect {
@@ -149,7 +173,7 @@
   }
 
   .experimental-card {
-    @apply transition-all duration-200 hover:text-white hover:bg-maximally-dark;
+    @apply transition-all duration-200;
   }
 
   .pixel-card {

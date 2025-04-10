@@ -60,7 +60,7 @@ const ExperimentalSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="pixel-card p-6">
+            <div key={index} className={`pixel-card p-6 ${index % 3 === 0 ? 'border-maximally-blue' : index % 3 === 1 ? 'border-maximally-red' : 'border-maximally-dark'}`}>
               <h3 className="font-press-start text-lg mb-4">{service.title}</h3>
               <p className="text-gray-800 mb-4">{service.description}</p>
               <p className="font-bold text-maximally-blue">{service.tagline}</p>
