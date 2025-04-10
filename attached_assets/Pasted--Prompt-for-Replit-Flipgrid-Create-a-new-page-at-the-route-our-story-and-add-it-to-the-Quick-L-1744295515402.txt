@@ -1,0 +1,54 @@
+✅ Prompt for Replit / Flipgrid:
+Create a new page at the route /our-story and add it to the “Quick Links” section in the footer.
+
+The page should include a modern, minimal design using Tailwind CSS. Wrap the entire content inside a responsive div with max-width and padding for readability.
+
+Here is the full content to include in the page (use h1, h2, p, and divs appropriately for structure and readability):
+
+Our Story
+🧠 From Idea to Impact — The Maximally Journey
+Most teens were scrolling. Rishul was studying scrolls. Not history scrolls — Instagram scrolls. Marketing scrolls. Trend scrolls. Strategy scrolls.
+
+And what he saw?
+
+A broken loop. Great brands were screaming into the void. Even promising products couldn’t break through the noise. Agencies were stuck in cycles — overpriced retainers, cookie-cutter campaigns, and buzzwords without results.
+
+So, Rishul did what most wouldn’t at 16.
+He said, “Let me fix this.”
+
+No VC funds. No big team. Just a teenager with a vision, Wi-Fi, and a dangerous level of ambition.
+
+⚡ Why Maximally?
+Rishul didn’t want to just “market.”
+He wanted to white-market — with clarity, precision, and purpose.
+Just like clean code, he believed marketing should be elegant, understandable, and scalable.
+
+So he built Maximally — a next-gen marketing agency that combines creative instincts with operational clarity.
+
+We don’t do jargon. We do impact.
+We don’t run campaigns. We run movements.
+
+From growth hacks to full-stack content strategies, we help businesses go viral with structure, and scale with soul.
+
+🧩 The Gap We’re Filling
+Most agencies either lack affordability or fail at personalization. Maximally bridges that:
+
+Gen Z instinct meets business IQ
+
+Low on fluff, high on ROI
+
+Tuned into culture, wired for conversion
+
+We’re young — yeah.
+But our age is our edge. We grew up in the content economy. We understand scroll behavior better than any boomer-led agency ever could.
+
+👊 Our Vision
+We’re not just building a marketing agency.
+We’re building a movement of mindful marketers who get results, not retweets.
+
+If you’re building something bold — a product, a service, or a story worth sharing — let’s make sure the world sees it.
+
+Add a centered button at the bottom that says: “Join the Movement”
+On click, it should redirect the user to the /contact page.
+
+Use modern font sizes (like text-2xl, text-base, leading-relaxed), max-w-3xl mx-auto, and Tailwind utility classes to give the section padding and spacing (py-8 px-4 sm:px-8 lg:px-16).
