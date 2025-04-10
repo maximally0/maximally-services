@@ -133,12 +133,13 @@
   }
 
   .pixel-card:hover {
-    @apply bg-maximally-dark;
+    @apply bg-maximally-dark transition-colors duration-300;
   }
 
   .pixel-card:hover h3,
-  .pixel-card:hover p {
-    @apply text-white;
+  .pixel-card:hover p,
+  .pixel-card:hover svg {
+    @apply text-white transition-colors duration-300;
   }
 
   .pixel-card:hover svg {

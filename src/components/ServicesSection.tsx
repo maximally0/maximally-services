@@ -14,7 +14,7 @@ const ServiceCard = ({ title, description, icon, color }: ServiceCardProps) => {
   
   return (
     <div 
-      className="pixel-card p-6 h-full bg-white transform hover:-translate-y-2 transition-transform duration-300"
+      className="pixel-card p-6 h-full bg-white text-black transform hover:-translate-y-2 transition-transform duration-300 hover:bg-maximally-dark hover:text-white"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
