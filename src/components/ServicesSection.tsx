@@ -14,7 +14,7 @@ const ServiceCard = ({ title, description, icon, color }: ServiceCardProps) => {
   
   return (
     <div 
-      className="pixel-card p-6 h-full bg-white hover:bg-maximally-dark group transition-colors duration-300"
+      className="pixel-card p-6 h-full bg-white transform hover:-translate-y-2 transition-transform duration-300"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -23,8 +23,8 @@ const ServiceCard = ({ title, description, icon, color }: ServiceCardProps) => {
           {icon}
         </div>
       </div>
-      <h3 className="font-press-start text-sm md:text-base text-maximally-dark group-hover:text-white mb-4 transition-colors duration-300">{title}</h3>
-      <p className="font-jetbrains text-sm text-gray-600 group-hover:text-gray-200 transition-colors duration-300">{description}</p>
+      <h3 className="font-press-start text-sm md:text-base text-maximally-dark mb-4">{title}</h3>
+      <p className="font-jetbrains text-sm text-gray-600">{description}</p>
     </div>
   );
 };

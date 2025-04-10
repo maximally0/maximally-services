@@ -41,14 +41,13 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
+          <NavLink to="/pricing">Our Services</NavLink>
           {location.pathname === '/' ? (
             <>
-              <NavLink href="#services">Services</NavLink>
               <NavLink href="#features">Features</NavLink>
               <NavLink href="#testimonials">Results</NavLink>
             </>
           ) : null}
-          <NavLink to="/pricing">Pricing</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </div>
 
@@ -65,14 +64,13 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-white border-t border-maximally-dark border-opacity-10 shadow-lg">
             <div className="flex flex-col items-center py-4">
+              <NavLink to="/pricing" mobile onClick={() => setIsOpen(false)}>Our Services</NavLink>
               {location.pathname === '/' ? (
                 <>
-                  <NavLink href="#services" mobile onClick={() => setIsOpen(false)}>Services</NavLink>
                   <NavLink href="#features" mobile onClick={() => setIsOpen(false)}>Features</NavLink>
                   <NavLink href="#testimonials" mobile onClick={() => setIsOpen(false)}>Results</NavLink>
                 </>
               ) : null}
-              <NavLink to="/pricing" mobile onClick={() => setIsOpen(false)}>Pricing</NavLink>
               <NavLink to="/contact" mobile onClick={() => setIsOpen(false)}>Contact</NavLink>
             </div>
           </div>

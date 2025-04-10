@@ -34,7 +34,7 @@ const HeroSection = () => {
             <a href="#contact" className="pixel-button bg-maximally-blue text-white font-jetbrains font-bold py-3 px-6 md:py-4 md:px-8 text-center text-sm md:text-base">
               <span className="relative z-10">START YOUR JOURNEY</span>
             </a>
-            <a href="#services" className="pixel-button bg-white text-maximally-dark font-jetbrains font-bold py-3 px-6 md:py-4 md:px-8 flex items-center justify-center gap-2 text-sm md:text-base">
+            <a href="/pricing" className="pixel-button bg-white text-maximally-dark font-jetbrains font-bold py-3 px-6 md:py-4 md:px-8 flex items-center justify-center gap-2 text-sm md:text-base">
               <span className="relative z-10">EXPLORE SERVICES</span>
               <ArrowRight size={16} className="relative z-10" />
             </a>
