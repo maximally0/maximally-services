@@ -117,21 +117,21 @@
     @apply bg-white border-2 border-maximally-dark relative transition-all duration-300
            before:absolute before:content-[''] before:w-full before:h-full 
            before:bg-maximally-dark before:right-[-8px] before:bottom-[-8px] before:-z-10
-           hover:translate-x-[-4px] hover:translate-y-[-4px];
+           hover:translate-x-[-4px] hover:translate-y-[-4px]
+           hover:bg-maximally-dark;
   }
   
-/* FIXED hover states on pixel cards with dark mode support */
-.pixel-card:hover {
-  @apply bg-white text-gray-900 border-gray-900 dark:bg-gray-900 dark:text-white dark:border-white;
-}
+  .pixel-card:hover * {
+    @apply text-white transition-colors duration-300;
+  }
 
-.pixel-card:hover h3 {
-  @apply text-gray-900 dark:text-white;
-}
+  .pixel-card:hover svg {
+    @apply text-white;
+  }
 
-.pixel-card:hover p {
-  @apply text-gray-700 dark:text-gray-300;
-}
+  .pixel-button {
+    @apply hover:bg-maximally-dark hover:text-white;
+  }
 
   
   .pixel-divider {
