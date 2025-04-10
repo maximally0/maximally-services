@@ -106,8 +106,7 @@
            transition-all duration-200 hover:translate-x-[-2px] hover:translate-y-[-2px]
            active:translate-x-[0px] active:translate-y-[0px] 
            after:content-[''] after:absolute after:w-full after:h-full after:bg-maximally-dark 
-           after:right-[-4px] after:bottom-[-4px] after:-z-10
-           hover:text-white;
+           after:right-[-4px] after:bottom-[-4px] after:-z-10;
   }
   
   .minecraft-border {
@@ -118,16 +117,7 @@
     @apply bg-white border-2 border-maximally-dark relative transition-all duration-300
            before:absolute before:content-[''] before:w-full before:h-full 
            before:bg-maximally-dark before:right-[-8px] before:bottom-[-8px] before:-z-10
-           hover:translate-x-[-4px] hover:translate-y-[-4px]
-           hover:bg-maximally-dark group;
-  }
-  
-  .pixel-card:hover * {
-    @apply text-white transition-colors duration-300;
-  }
-  
-  .pixel-card:hover svg {
-    @apply text-white;
+           hover:translate-x-[-4px] hover:translate-y-[-4px];
   }
   
 /* FIXED hover states on pixel cards with dark mode support */
