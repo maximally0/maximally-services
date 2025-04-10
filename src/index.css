@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Press+Start+2P&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,17 +16,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 204 76% 57%; /* #3C9EE7 */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 10%; /* #1A1A1A */
+    --secondary-foreground: 0 0% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 3 58% 56%; /* #D94F45 */
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -35,19 +38,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -96,6 +92,40 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-jetbrains;
+  }
+}
+
+@layer components {
+  .pixel-border {
+    @apply relative before:absolute before:inset-0 before:border-2 before:border-maximally-dark before:content-[''] before:-right-1 before:-bottom-1 before:bg-transparent;
+  }
+
+  .pixel-button {
+    @apply relative overflow-hidden border-2 border-maximally-dark inline-block 
+           transition-all duration-200 hover:translate-x-[-2px] hover:translate-y-[-2px]
+           active:translate-x-[0px] active:translate-y-[0px] 
+           after:content-[''] after:absolute after:w-full after:h-full after:bg-maximally-dark 
+           after:right-[-4px] after:bottom-[-4px] after:-z-10;
+  }
+  
+  .minecraft-border {
+    @apply border-2 border-maximally-dark shadow-[4px_4px_0px_0px_rgba(26,26,26,1)];
+  }
+  
+  .pixel-card {
+    @apply bg-white border-2 border-maximally-dark relative transition-all duration-300
+           before:absolute before:content-[''] before:w-full before:h-full 
+           before:bg-maximally-dark before:right-[-8px] before:bottom-[-8px] before:-z-10
+           hover:translate-x-[-4px] hover:translate-y-[-4px];
+  }
+  
+  .pixel-divider {
+    height: 8px;
+    background-image: 
+      linear-gradient(to right, transparent 0%, transparent 20%, #3C9EE7 20%, #3C9EE7 40%, 
+                     transparent 40%, transparent 60%, #D94F45 60%, #D94F45 80%,
+                     transparent 80%, transparent 100%);
+    background-size: 20px 8px;
   }
 }
