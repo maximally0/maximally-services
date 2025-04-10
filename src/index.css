@@ -131,18 +131,8 @@
     @apply text-gray-800 text-base leading-relaxed;
   }
 
-  .pixel-card:hover h3,
-  .pixel-card:hover p,
-  .pixel-card:hover svg {
-    @apply text-white transition-colors duration-300;
-  }
-
-  .pixel-card:hover svg {
-    @apply text-white;
-  }
-
   .pixel-button {
-    @apply hover:bg-maximally-dark hover:text-white;
+    @apply transition-transform;
   }
 
 
