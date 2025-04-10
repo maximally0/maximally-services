@@ -121,6 +121,14 @@
            hover:bg-maximally-dark;
   }
   
+  .pixel-card h3 {
+    @apply text-maximally-dark;
+  }
+
+  .pixel-card p {
+    @apply text-gray-600;
+  }
+  
   .pixel-card:hover * {
     @apply text-white transition-colors duration-300;
   }
