@@ -1,9 +1,10 @@
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Check, ArrowRight, Package, Star, Globe, Instagram, Search, Target, FileText, Video, Zap } from 'lucide-react';
+import { Check, ArrowRight, Package, Star, Globe, Instagram, Search, Target, FileText, Video, Zap, Trophy } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
