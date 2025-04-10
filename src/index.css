@@ -120,12 +120,16 @@
            hover:translate-x-[-4px] hover:translate-y-[-4px];
   }
 
+  .pixel-card {
+    @apply bg-white;
+  }
+
   .pixel-card h3 {
-    @apply text-maximally-dark;
+    @apply text-maximally-dark font-bold;
   }
 
   .pixel-card p {
-    @apply text-gray-600;
+    @apply text-gray-700;
   }
 
   .pixel-card:hover {
