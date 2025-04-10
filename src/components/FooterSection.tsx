@@ -1,15 +1,14 @@
 
 import React from 'react';
 import { Mail, MessageSquare, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
-import PixelLogo from './PixelLogo';
 import { Link } from 'react-router-dom';
 
 const FooterSection = () => {
   const socialLinks = [
     { icon: <Facebook size={20} />, label: 'Facebook', href: '#' },
-    { icon: <Instagram size={20} />, label: 'Instagram', href: '#' },
+    { icon: <Instagram size={20} />, label: 'Instagram', href: 'https://www.instagram.com/maximally.in/' },
     { icon: <Twitter size={20} />, label: 'Twitter', href: '#' },
-    { icon: <Linkedin size={20} />, label: 'LinkedIn', href: '#' },
+    { icon: <Linkedin size={20} />, label: 'LinkedIn', href: 'https://www.linkedin.com/company/maximallysupplements' },
   ];
 
   return (
@@ -18,8 +17,7 @@ const FooterSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Column 1 - About */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <PixelLogo />
+            <div className="mb-6">
               <span className="font-press-start text-white text-base">MAXIMALLY</span>
             </div>
             <p className="font-jetbrains text-gray-300 mb-6">
@@ -31,6 +29,8 @@ const FooterSection = () => {
                   key={index} 
                   href={link.href}
                   aria-label={link.label}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 border border-gray-600 flex items-center justify-center hover:bg-white hover:text-maximally-dark transition-colors"
                 >
                   {link.icon}
