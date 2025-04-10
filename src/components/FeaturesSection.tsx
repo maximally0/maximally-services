@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { Zap, Cpu, Shield, BarChart, Clock, Globe } from 'lucide-react';
 
@@ -39,7 +38,7 @@ const Feature = ({ title, description, icon, delay }: FeatureProps) => {
   return (
     <div 
       ref={featureRef}
-      className={`flex flex-col items-center text-center transition-all duration-700 transform ${
+      className={`flex flex-col items-center text-center transition-all duration-700 transform feature-item ${
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
       }`}
     >
@@ -101,7 +100,7 @@ const FeaturesSection = () => {
             We combine pixel-perfect aesthetics with AI-powered performance to deliver results that matter.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {features.map((feature, index) => (
             <Feature 
@@ -114,7 +113,7 @@ const FeaturesSection = () => {
           ))}
         </div>
       </div>
-      
+
       <div className="pixel-divider w-full mt-20"></div>
     </section>
   );

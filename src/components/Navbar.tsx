@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -96,7 +95,7 @@ const NavLink = ({ href, to, children, mobile, onClick }: NavLinkProps) => {
         to={to} 
         onClick={onClick}
         className={cn(
-          "font-jetbrains font-medium hover:text-maximally-blue relative transition-colors",
+          "font-jetbrains font-medium nav-link relative transition-colors",
           "after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0",
           "after:bg-maximally-blue after:transition-all after:duration-300 hover:after:w-full",
           mobile ? "py-3 text-maximally-dark" : "text-maximally-dark"
@@ -106,13 +105,13 @@ const NavLink = ({ href, to, children, mobile, onClick }: NavLinkProps) => {
       </Link>
     );
   }
-  
+
   return (
     <a 
       href={href} 
       onClick={onClick}
       className={cn(
-        "font-jetbrains font-medium hover:text-maximally-blue relative transition-colors",
+        "font-jetbrains font-medium nav-link relative transition-colors",
         "after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0",
         "after:bg-maximally-blue after:transition-all after:duration-300 hover:after:w-full",
         mobile ? "py-3 text-maximally-dark" : "text-maximally-dark"

@@ -102,21 +102,54 @@
 
   .pixel-button {
     @apply relative overflow-hidden border-2 border-maximally-dark inline-block 
-           transition-transform duration-200 hover:translate-x-[-2px] hover:translate-y-[-2px]
-           active:translate-x-[0px] active:translate-y-[0px] 
+           transition-all duration-200 hover:translate-x-[-2px] hover:translate-y-[-2px]
+           hover:text-white active:translate-x-[0px] active:translate-y-[0px] 
            after:content-[''] after:absolute after:w-full after:h-full after:bg-maximally-dark 
            after:right-[-4px] after:bottom-[-4px] after:-z-10;
   }
 
   .minecraft-border {
-    @apply border-2 border-maximally-dark shadow-[4px_4px_0px_0px_rgba(26,26,26,1)];
+    @apply border-2 border-maximally-dark shadow-[4px_4px_0px_0px_rgba(26,26,26,1)]
+           hover:text-maximally-blue transition-colors duration-200;
   }
 
   .pixel-card {
-    @apply bg-white border-2 border-maximally-dark relative transition-transform duration-300
+    @apply bg-white border-2 border-maximally-dark relative transition-all duration-300
            before:absolute before:content-[''] before:w-full before:h-full 
            before:bg-maximally-dark before:right-[-8px] before:bottom-[-8px] before:-z-10
-           hover:translate-y-[-8px] shadow-lg;
+           hover:translate-y-[-8px] hover:text-maximally-red shadow-lg;
+  }
+
+  .text-hover-effect {
+    @apply transition-colors duration-200 hover:text-maximally-blue;
+  }
+
+  .nav-link {
+    @apply transition-colors duration-200 hover:text-maximally-red;
+  }
+
+  .footer-link {
+    @apply transition-colors duration-200 hover:text-maximally-blue;
+  }
+
+  .service-card {
+    @apply transition-all duration-200 hover:text-white hover:bg-maximally-dark;
+  }
+
+  .feature-item {
+    @apply transition-colors duration-200 hover:text-maximally-red;
+  }
+
+  .pricing-card {
+    @apply transition-all duration-300 hover:text-maximally-blue hover:scale-105;
+  }
+
+  .contact-link {
+    @apply transition-colors duration-200 hover:text-maximally-red;
+  }
+
+  .experimental-card {
+    @apply transition-all duration-200 hover:text-white hover:bg-maximally-dark;
   }
 
   .pixel-card {

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Brain, TrendingUp, Megaphone, Database, Target, BarChart3 } from 'lucide-react';
 
@@ -11,10 +10,10 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ title, description, icon, color }: ServiceCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
-  
+
   return (
     <div 
-      className="pixel-card p-6 h-full bg-white text-black transform hover:-translate-y-2 transition-transform duration-300 hover:bg-maximally-dark hover:text-white"
+      className="pixel-card p-6 h-full bg-white text-black transform hover:-translate-y-2 transition-transform duration-300 hover:bg-maximally-dark hover:text-white service-card"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -79,7 +78,7 @@ const ServicesSection = () => {
             Level up your digital marketing with our pixel-perfect AI-powered services.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <ServiceCard 
@@ -92,7 +91,7 @@ const ServicesSection = () => {
           ))}
         </div>
       </div>
-      
+
       <div className="pixel-divider w-full mt-20"></div>
     </section>
   );

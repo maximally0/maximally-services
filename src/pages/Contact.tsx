@@ -33,7 +33,7 @@ const Contact = () => {
   };
   return <div className="min-h-screen bg-white">
       <Navbar />
-      
+
       <motion.div className="pt-32 pb-20 px-6" initial="hidden" animate="visible" variants={containerVariants}>
         <div className="container mx-auto max-w-4xl">
           <motion.div className="text-center mb-16" variants={itemVariants}>
@@ -42,33 +42,33 @@ const Contact = () => {
               Have questions about our services or want to work together? Reach out to us!
             </p>
           </motion.div>
-          
+
           <motion.div className="bg-white minecraft-border p-10 text-center" variants={itemVariants}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="flex flex-col items-center p-6 border-2 border-maximally-dark bg-blue-50">
                 <Mail size={48} className="text-maximally-blue mb-6" />
                 <h2 className="font-press-start text-xl mb-3">EMAIL US</h2>
-                <a href="mailto:hello@maximally.in" className="font-jetbrains text-lg hover:text-maximally-blue transition-colors">
+                <a href="mailto:hello@maximally.in" className="font-jetbrains text-lg contact-link">
                   hello@maximally.in
                 </a>
               </div>
-              
+
               <div className="flex flex-col items-center p-6 border-2 border-maximally-dark bg-red-50">
                 <Phone size={48} className="text-maximally-red mb-6" />
                 <h2 className="font-press-start text-xl mb-3">CALL US</h2>
-                <a href="tel:+919041260790" className="font-jetbrains text-lg hover:text-maximally-red transition-colors">
+                <a href="tel:+919041260790" className="font-jetbrains text-lg contact-link">
                   +91 9041260790
                 </a>
               </div>
             </div>
-            
+
             <div className="mt-12 max-w-xl mx-auto">
-              
+
             </div>
           </motion.div>
         </div>
       </motion.div>
-      
+
       <FooterSection />
     </div>;
 };
