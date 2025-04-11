@@ -6,6 +6,12 @@ interface SEOProps {
   description?: string;
   image?: string;
   url?: string;
+  type?: string;
+  article?: {
+    publishedTime?: string;
+    author?: string;
+    tags?: string[];
+  };
 }
 
 export const SEO = ({
@@ -17,20 +23,30 @@ export const SEO = ({
     : title.includes("Experimental")
     ? "Discover AI-driven experimental services to give your marketing an edge."
     : "Maximally is an AI-first digital marketing agency helping startups scale with automation, design, and strategy. Not your average agency 👾",
-  image = "/lovable-uploads/maximally-social.png",
-  url = "https://maximally.in"
+  image = "https://maximally.in/lovable-uploads/maximally-social.png",
+  url = "https://maximally.in",
+  type = "website",
+  article
 }: SEOProps) => {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": type === "article" ? "Article" : "Organization",
     "name": "Maximally",
-    "url": "https://maximally.in",
+    "url": url,
     "logo": "https://maximally.in/lovable-uploads/maximally-social.png",
-    "description": "AI-first digital marketing agency specializing in content engines, SEO optimization and pixel-perfect design that converts.",
+    "description": description,
     "sameAs": [
       "https://instagram.com/maximally.in",
       "https://linkedin.com/company/maximallysupplements"
-    ]
+    ],
+    ...(article && {
+      "datePublished": article.publishedTime,
+      "author": {
+        "@type": "Person",
+        "name": article.author
+      },
+      "keywords": article.tags?.join(", ")
+    })
   };
 
   return (
@@ -45,7 +61,17 @@ export const SEO = ({
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={type} />
+      
+      {article && (
+        <>
+          <meta property="article:published_time" content={article.publishedTime} />
+          <meta property="article:author" content={article.author} />
+          {article.tags?.map(tag => (
+            <meta property="article:tag" content={tag} key={tag} />
+          ))}
+        </>
+      )}
       
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
