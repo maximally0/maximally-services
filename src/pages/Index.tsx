@@ -15,11 +15,43 @@ const Index = () => {
     "name": "Maximally",
     "url": "https://maximally.in",
     "logo": "https://maximally.in/lovable-uploads/maximally-social.png",
-    "description": "AI-first digital marketing agency specializing in content engines, SEO optimization and pixel-perfect design that converts.",
+    "description": "AI-powered digital marketing agency specializing in SEO services, content creation, and marketing automation for startups in India.",
     "sameAs": [
       "https://www.instagram.com/maximally.in",
       "https://www.linkedin.com/company/maximallysupplements"
-    ]
+    ],
+    "areaServed": "India",
+    "priceRange": "₹₹₹",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "AI Marketing Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI SEO Optimization",
+            "description": "Data-driven SEO services powered by artificial intelligence"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI Content Creation",
+            "description": "Automated content generation and optimization"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Marketing Automation",
+            "description": "AI-powered marketing automation solutions"
+          }
+        }
+      ]
+    }
   };
 
   return (

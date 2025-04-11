@@ -15,14 +15,14 @@ interface SEOProps {
 }
 
 export const SEO = ({
-  title = "Maximally – AI x Marketing, Pixel by Pixel",
+  title = "Maximally | AI Digital Marketing Agency for Startups in India",
   description = title.includes("Pricing") 
     ? "Explore flexible pricing plans tailored to your startup's marketing needs."
     : title.includes("Contact")
     ? "Let's connect and build your marketing engine together!"
     : title.includes("Experimental")
     ? "Discover AI-driven experimental services to give your marketing an edge."
-    : "Maximally is an AI-first digital marketing agency helping startups scale with automation, design, and strategy. Not your average agency 👾",
+    : "Transform your business with AI-powered digital marketing, SEO services, and content creation. Expert marketing automation for startups and growing businesses in India. Get started today!",
   image = "https://maximally.in/lovable-uploads/maximally-social.png",
   url = "https://maximally.in",
   type = "website",

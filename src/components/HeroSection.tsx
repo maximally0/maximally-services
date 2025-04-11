@@ -51,13 +51,13 @@ const HeroSection = () => {
         <div className="max-w-3xl mx-auto text-center">
 
           <h1 className={`font-press-start text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 md:mb-6 leading-tight transition-all duration-700 delay-100 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <span className="text-maximally-dark">MAXIMIZE YOUR</span> <br />
-            <span className="text-maximally-blue">DIGITAL PRESENCE</span> <br />
-            <span className="text-maximally-red">WITH AI</span>
+            <span className="text-maximally-dark">AI-POWERED</span> <br />
+            <span className="text-maximally-blue">DIGITAL MARKETING</span> <br />
+            <span className="text-maximally-red">FOR STARTUPS</span>
           </h1>
 
           <p className={`font-jetbrains text-gray-800 text-base md:text-lg mb-6 md:mb-10 max-w-2xl mx-auto transition-all duration-700 delay-200 transform leading-relaxed ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            Pixelated perfection meets cutting-edge AI marketing. We turn your brand into the next level digital powerhouse with content engines, SEO optimization, and pixel-perfect design that converts.
+            India's leading AI digital marketing agency helping startups and businesses scale smarter. We combine AI-powered SEO services, intelligent content creation, and data-driven marketing automation to deliver measurable growth.
           </p>
 
           <div className={`flex flex-col gap-4 transition-all duration-700 delay-300 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
