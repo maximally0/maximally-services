@@ -1,42 +1,12 @@
-
 import React, { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import PixelLogo from './PixelLogo';
-import { Helmet } from 'react-helmet-async';
-
 const HeroSection = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
     setIsLoaded(true);
   }, []);
-
-  // JSON-LD structured data for better SEO
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Maximally",
-    "url": "https://maximally.ai",
-    "logo": "https://maximally.ai/logo.png",
-    "description": "AI-first digital marketing agency specializing in content engines, SEO optimization and pixel-perfect design that converts.",
-    "sameAs": [
-      "https://twitter.com/maximally",
-      "https://facebook.com/maximally",
-      "https://linkedin.com/company/maximally"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "US"
-    }
-  };
-
-  return (
-    <section className="relative pt-20 md:pt-32 pb-16 md:pb-20 overflow-hidden">
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Helmet>
-      
+  return <section className="relative pt-20 md:pt-32 pb-16 md:pb-20 overflow-hidden">
       {/* Background pixel grid pattern */}
       <div className="absolute inset-0 opacity-5 pointer-events-none">
         <div className="w-full h-full grid grid-cols-[repeat(20,1fr)] grid-rows-[repeat(20,1fr)]">
@@ -49,6 +19,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 relative">
         <div className="max-w-3xl mx-auto text-center">
           
+          
           <h1 className={`font-press-start text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 md:mb-6 leading-tight transition-all duration-700 delay-100 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <span className="text-maximally-dark">MAXIMIZE YOUR</span> <br />
             <span className="text-maximally-blue">DIGITAL PRESENCE</span> <br />
@@ -56,7 +27,7 @@ const HeroSection = () => {
           </h1>
           
           <p className={`font-jetbrains text-gray-800 text-base md:text-lg mb-6 md:mb-10 max-w-2xl mx-auto transition-all duration-700 delay-200 transform leading-relaxed ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            Pixelated perfection meets cutting-edge AI marketing. We turn your brand into the next level digital powerhouse with content engines, SEO optimization, and pixel-perfect design that converts.
+            Pixelated perfection meets cutting-edge AI marketing. We turn your brand into the next level digital powerhouse.
           </p>
           
           <div className={`flex flex-col sm:flex-row gap-4 justify-center transition-all duration-700 delay-300 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
@@ -72,8 +43,6 @@ const HeroSection = () => {
       </div>
       
       <div className="pixel-divider w-full mt-12 md:mt-20"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
