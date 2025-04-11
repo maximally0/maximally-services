@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -66,7 +67,6 @@ const Navbar = () => {
             <div className="flex flex-col items-center py-4">
               <NavLink to="/pricing" mobile onClick={() => setIsOpen(false)}>Our Services</NavLink>
               <NavLink to="/experimentalservices" mobile onClick={() => setIsOpen(false)}>Experimental</NavLink>
-              <NavLink to="/our-story" mobile onClick={() => setIsOpen(false)}>Our Story</NavLink>
               {location.pathname === '/' ? (
                 <>
                   <NavLink href="#features" mobile onClick={() => setIsOpen(false)}>Features</NavLink>
