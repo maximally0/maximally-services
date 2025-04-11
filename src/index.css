@@ -197,6 +197,19 @@
   }
 
 
+  /* Blog post styles */
+  .prose h2 {
+    @apply border-b-2 border-gray-100 pb-2;
+  }
+
+  .prose ul {
+    @apply space-y-2;
+  }
+
+  .prose p > em {
+    @apply bg-maximally-blue bg-opacity-10 px-2 py-1 rounded;
+  }
+
   .pixel-divider {
     height: 8px;
     background-image: 

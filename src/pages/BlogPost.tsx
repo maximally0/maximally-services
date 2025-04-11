@@ -35,7 +35,7 @@ const BlogPost = () => {
           </header>
           
           <div 
-            className="font-jetbrains prose prose-lg mx-auto"
+            className="font-jetbrains prose prose-lg mx-auto prose-headings:font-press-start prose-headings:text-maximally-dark prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4 prose-p:text-gray-700 prose-p:mb-6 prose-ul:list-disc prose-ul:pl-6 prose-ul:mb-6 prose-li:text-gray-700 prose-li:mb-2 prose-strong:text-maximally-dark prose-strong:font-bold prose-em:text-maximally-blue prose-em:font-normal"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </article>
