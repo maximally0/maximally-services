@@ -84,3 +84,73 @@
 - AI technology providers
 - Marketing automation platforms
 - Local business associations
+
+## Pricing & Packages
+
+### Core Packages
+1. Starter Kit (₹7,499/mo | $99/mo)
+   - 8 social media posts
+   - 2 reels
+   - 1 blog article
+   - Basic SEO setup
+   - Monthly analytics report
+
+2. Growth Kit (₹14,999/mo | $199/mo)
+   - 12 social media posts
+   - 4 reels
+   - Ad management (Google or Meta)
+   - 2 blog articles
+   - SEO optimization
+   - Content calendar
+   - Bi-weekly reporting
+
+3. Full Stack Marketing (₹24,999/mo | $349/mo)
+   - Full social media management
+   - Google & Meta ad management
+   - 4 blog articles
+   - Complete SEO service
+   - Website maintenance & updates
+   - Branding support
+   - Custom analytics dashboard
+   - Dedicated account manager
+
+### Individual Services
+
+#### Branding
+- Logo Design: ₹1,999 ($29)
+- Brand Kit: ₹4,999 ($69)
+- Business Card/Letterhead: ₹999 ($15)
+- Social Media Branding Pack: ₹1,999 ($29)
+
+#### Website Design
+- 1-Page Landing: ₹4,999 ($69)
+- 5-Page Business Website: ₹9,999 ($139)
+- Basic E-commerce Website: ₹14,999 ($199)
+- Monthly Maintenance: ₹999/mo ($15/mo)
+
+#### Social Media
+- Management (12 posts/mo): ₹4,999/mo ($69/mo)
+- Reel Creation (4/mo): ₹2,999/mo ($39/mo)
+- Ads Management: ₹3,999/mo ($59/mo)
+- Influencer Campaign Setup: ₹1,999 ($29)
+
+#### SEO Services
+- Basic SEO + Setup: ₹2,999/mo ($39/mo)
+- Blog Strategy + 4 Articles: ₹3,999/mo ($59/mo)
+- Google My Business Optimization: ₹1,499 ($19)
+
+#### Content Marketing
+- Blog Article (800-1000 words): ₹499 ($7)
+- Email Campaign Copy: ₹599 ($9)
+- Monthly Content Calendar: ₹999 ($15)
+
+#### Video Content
+- Animated Explainer (60s): ₹6,999 ($99)
+- Product Demo/Promo: ₹3,999 ($59)
+- Reels/Shorts: ₹999 ($15)
+
+#### Add-Ons
+- Extra Reel: ₹999 ($15)
+- Extra Blog: ₹499 ($7)
+- Email Campaign: ₹599 ($9)
+- WhatsApp Campaign Setup: ₹1,499 ($19)
