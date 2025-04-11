@@ -190,7 +190,7 @@ export const blogPosts: BlogPost[] = [
 
       <p>Want to supercharge your marketing stack? <a href="/contact" class="text-maximally-blue hover:text-maximally-dark">Book a free consult</a> and let's make it unfair for your competitors.</p>
     `
-  }
+  },
 {
     slug: "building-brand-trust-ai-driven-world",
     title: "Building Brand Trust in a Noisy AI-Driven World (Without Sounding Like Everyone Else)",
