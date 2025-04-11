@@ -1,63 +1,126 @@
-import React, { useState } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { cn } from '@/lib/utils';
+import PixelLogo from './PixelLogo';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white border-b-2 border-maximally-dark">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center h-16 sm:h-20">
-          <div className="flex items-center">
-            <a href="/" className="flex items-center">
-              <span className="font-press-start text-lg text-maximally-dark mr-1">MAX</span>
-              <span className="font-press-start text-lg text-maximally-blue">IMALLY</span>
-            </a>
+    <nav className={cn(
+      "fixed top-0 w-full z-50 transition-all duration-300 py-4 px-6 md:px-12",
+      scrolled ? "bg-white shadow-md" : "bg-transparent"
+    )}>
+      <div className="container mx-auto flex justify-between items-center">
+        <Link to="/" className="flex items-center gap-2 group">
+          <PixelLogo />
+          <span className="font-press-start text-maximally-dark text-sm md:text-base group-hover:animate-pixel-shift">MAXIMALLY</span>
+        </Link>
+
+        {/* Desktop Menu */}
+        <div className="hidden lg:flex space-x-8">
+          <NavLink to="/pricing">Our Services</NavLink>
+          <NavLink to="/experimentalservices">Experimental</NavLink>
+          {location.pathname === '/' ? (
+            <>
+              <NavLink href="#features">Features</NavLink>
+              <NavLink href="#testimonials">Results</NavLink>
+            </>
+          ) : null}
+          <NavLink to="/contact">Contact</NavLink>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button 
+          onClick={() => setIsOpen(!isOpen)} 
+          className="md:hidden p-2 minecraft-border bg-white hover:bg-maximally-blue hover:text-white transition-colors"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="md:hidden absolute top-full left-0 w-full bg-white border-t border-maximally-dark border-opacity-10 shadow-lg">
+            <div className="flex flex-col items-center py-4">
+              <NavLink to="/pricing" mobile onClick={() => setIsOpen(false)}>Our Services</NavLink>
+              <NavLink to="/experimentalservices" mobile onClick={() => setIsOpen(false)}>Experimental</NavLink>
+              {location.pathname === '/' ? (
+                <>
+                  <NavLink href="#features" mobile onClick={() => setIsOpen(false)}>Features</NavLink>
+                  <NavLink href="#testimonials" mobile onClick={() => setIsOpen(false)}>Results</NavLink>
+                </>
+              ) : null}
+              <NavLink to="/contact" mobile onClick={() => setIsOpen(false)}>Contact</NavLink>
+            </div>
           </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="/blog" className="nav-link font-jetbrains text-sm font-medium">BLOG</a>
-            <a href="/pricing" className="nav-link font-jetbrains text-sm font-medium">PRICING</a>
-            <a href="/experimentalservices" className="nav-link font-jetbrains text-sm font-medium">EXPERIMENTAL</a>
-            <a href="/contact" className="pixel-button bg-maximally-blue text-white font-jetbrains font-bold py-2 px-4 text-sm">
-              <span className="relative z-10">CONTACT</span>
-            </a>
-          </nav>
-
-          {/* Mobile Navigation Button */}
-          <button
-            onClick={toggleMobileMenu}
-            className="md:hidden flex items-center"
-            aria-label="Toggle Menu"
-          >
-            {isMobileMenuOpen ? (
-              <X className="h-6 w-6 text-maximally-dark" />
-            ) : (
-              <Menu className="h-6 w-6 text-maximally-dark" />
-            )}
-          </button>
-        </div>
+        )}
       </div>
+    </nav>
+  );
+};
 
-      {/* Mobile Menu */}
-      <div
-        className={`md:hidden bg-white border-b-2 border-maximally-dark transition-all duration-300 ${isMobileMenuOpen ? 'max-h-60' : 'max-h-0 invisible'} overflow-hidden`}
+interface NavLinkProps {
+  href?: string;
+  to?: string;
+  children: React.ReactNode;
+  mobile?: boolean;
+  onClick?: () => void;
+}
+
+const NavLink = ({ href, to, children, mobile, onClick }: NavLinkProps) => {
+  if (to) {
+    return (
+      <Link 
+        to={to} 
+        onClick={onClick}
+        className={cn(
+          "font-jetbrains font-medium nav-link relative transition-colors",
+          "after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0",
+          "after:bg-maximally-blue after:transition-all after:duration-300 hover:after:w-full",
+          mobile ? "py-3 text-maximally-dark" : "text-maximally-dark"
+        )}
       >
-        <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-          <a href="/blog" className="nav-link font-jetbrains text-sm font-medium py-2">BLOG</a>
-          <a href="/pricing" className="nav-link font-jetbrains text-sm font-medium py-2">PRICING</a>
-          <a href="/experimentalservices" className="nav-link font-jetbrains text-sm font-medium py-2">EXPERIMENTAL</a>
-          <a href="/contact" className="pixel-button bg-maximally-blue text-white font-jetbrains font-bold py-2 px-4 text-sm inline-block">
-            <span className="relative z-10">CONTACT</span>
-          </a>
-        </div>
-      </div>
-    </header>
+        {children}
+      </Link>
+    );
+  }
+
+  return (
+    <a 
+      href={href} 
+      onClick={onClick}
+      className={cn(
+        "font-jetbrains font-medium nav-link relative transition-colors",
+        "after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0",
+        "after:bg-maximally-blue after:transition-all after:duration-300 hover:after:w-full",
+        mobile ? "py-3 text-maximally-dark" : "text-maximally-dark"
+      )}
+    >
+      {children}
+    </a>
   );
 };
 
