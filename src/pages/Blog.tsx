@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { PageBreadcrumbs } from '@/components/PageBreadcrumbs';
 import { Link } from 'react-router-dom';
 import { blogPosts } from '@/data/blogPosts';
 import { SEO } from '@/components/SEO';
@@ -14,7 +15,8 @@ const Blog = () => {
         description="Stay ahead of AI marketing trends. Read our thoughts on growth, automation, and design."
       />
       <Navbar />
-      <main className="pt-32 pb-20">
+      <PageBreadcrumbs currentPath="/blog" />
+      <main className="pt-16 pb-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h1 className="font-press-start text-4xl md:text-5xl text-maximally-dark mb-4">
