@@ -19,7 +19,10 @@ export default tseslint.config(
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+        React: "readonly"
+      },
     },
     plugins: {
       "react-hooks": reactHooks,
@@ -33,10 +36,16 @@ export default tseslint.config(
         "warn",
         { allowConstantExport: true },
       ],
-      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "warn",
       "jsx-a11y/alt-text": "error",
       "jsx-a11y/anchor-has-content": "error",
-      "jsx-a11y/click-events-have-key-events": "error"
+      "jsx-a11y/click-events-have-key-events": "error",
+      "jsx-a11y/anchor-is-valid": "error",
+      "jsx-a11y/aria-props": "error",
+      "jsx-a11y/aria-role": "error",
+      "jsx-a11y/role-has-required-aria-props": "error",
+      "react/prop-types": "off",
+      "react/react-in-jsx-scope": "off"
     },
   }
 );
