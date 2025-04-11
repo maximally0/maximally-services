@@ -14,4 +14,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://maximally.ai/sitemap.xml
+Sitemap: https://maximally.in/sitemap.xml
