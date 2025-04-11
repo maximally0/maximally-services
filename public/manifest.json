@@ -1,0 +1,17 @@
+
+{
+  "name": "Maximally - AI-First Digital Marketing Agency",
+  "short_name": "Maximally",
+  "description": "AI-first digital marketing agency specializing in content engines, SEO optimization and pixel-perfect design that converts.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1A1A1A",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
