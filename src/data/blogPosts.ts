@@ -355,4 +355,5 @@ export const blogPosts: BlogPost[] = [
       <h3>Get Started with AI Marketing</h3>
       <p>Ready to transform your marketing strategy? <a href="/contact" class="text-maximally-blue hover:text-maximally-dark">Contact us</a> for a free consultation.</p>
     `
-}
+  }
+];
