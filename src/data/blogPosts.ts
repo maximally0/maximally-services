@@ -318,9 +318,8 @@ export const blogPosts: BlogPost[] = [
       <p>Need help building a brand people actually trust?<br/>
       We help startups go from "meh" to memorable using AI + strategy + stupid good design. <a href="/contact" class="text-maximally-blue hover:text-maximally-dark">Let's talk</a>.</p>
     `
-  }
-];
-{
+  },
+  {
     slug: "how-ai-revolutionizing-digital-marketing-startups",
     title: "How AI Is Revolutionizing Digital Marketing for Startups in 2025",
     excerpt: "Discover how artificial intelligence is transforming digital marketing strategies for startups and scaling businesses.",
