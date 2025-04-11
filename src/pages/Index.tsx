@@ -17,8 +17,8 @@ const Index = () => {
     "logo": "https://maximally.in/lovable-uploads/maximally-social.png",
     "description": "AI-first digital marketing agency specializing in content engines, SEO optimization and pixel-perfect design that converts.",
     "sameAs": [
-      "https://twitter.com/maximally",
-      "https://linkedin.com/company/maximally"
+      "https://www.instagram.com/maximally.in",
+      "https://www.linkedin.com/company/maximallysupplements"
     ]
   };
 
