@@ -43,6 +43,7 @@ const Navbar = () => {
         <div className="hidden lg:flex space-x-8">
           <NavLink to="/pricing">Our Services</NavLink>
           <NavLink to="/experimentalservices">Experimental</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
           {location.pathname === '/' ? (
             <>
               <NavLink href="#features">Features</NavLink>

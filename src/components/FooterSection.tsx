@@ -59,6 +59,7 @@ const FooterSection = () => {
               <li><Link to="/" className="text-gray-300 hover:text-white hover-link">Home</Link></li>
               <li><Link to="/pricing" className="text-gray-300 hover:text-white hover-link">Pricing</Link></li>
               <li><Link to="/experimentalservices" className="text-gray-300 hover:text-white hover-link">Experimental</Link></li>
+              <li><Link to="/blog" className="text-gray-300 hover:text-white hover-link">Blog</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-white hover-link">Contact</Link></li>
               <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white hover-link">Privacy Policy</Link></li>
               <li><Link to="/terms-of-service" className="text-gray-300 hover:text-white hover-link">Terms of Service</Link></li>
