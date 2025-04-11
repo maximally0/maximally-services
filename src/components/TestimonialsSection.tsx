@@ -49,25 +49,67 @@ const TestimonialsSection = () => {
   
   const testimonials = [
     {
-      quote: "Maximally ne hamari digital presence ko ekdum transform kar diya. Their AI-powered approach is truly revolutionary for our brand!",
+      quote: "Maximally transformed our digital presence completely. Their AI-powered approach is truly revolutionary for our brand!",
       author: "PRIYA SHARMA",
       company: "TechStart India",
       rating: 5,
-      result: "3 mahine mein 312% increase in qualified leads"
+      result: "312% increase in qualified leads in just 3 months"
     },
     {
-      quote: "The pixel-perfect designs combined with AI strategies gave our brand a competitive edge in the crowded Indian market. Totally worth it!",
+      quote: "The pixel-perfect designs combined with AI strategies gave our brand a competitive edge in the crowded market. Totally worth it!",
       author: "VIKRAM MEHTA",
       company: "Innovate Solutions Pvt Ltd",
       rating: 5,
       result: "278% ROI on marketing spend with outstanding customer response"
     },
     {
-      quote: "Maximally ke saath kaam karna was a game-changer for our startup. Their data-driven approach helped us identify opportunities we didn't even know existed.",
+      quote: "Working with Maximally was a game-changer for our startup. Their data-driven approach helped us identify opportunities we didn't even know existed.",
       author: "ANJALI PATEL",
       company: "Growth Ventures India",
       rating: 4,
       result: "48% reduction in customer acquisition cost within first quarter"
+    },
+    {
+      quote: "Maximally's AI-driven strategies helped us reach our target audience with unprecedented precision. The results speak for themselves.",
+      author: "ROHIT JINDAL",
+      company: "daP2",
+      rating: 5,
+      result: "189% increase in online engagement and 67% boost in conversions"
+    },
+    {
+      quote: "Their innovative approach to digital marketing revolutionized how we connect with healthcare professionals. Exceptional service!",
+      author: "DR. ANIL SHARMA",
+      company: "Pavittar Pharmaceuticals",
+      rating: 5,
+      result: "153% growth in qualified lead generation within 6 months"
+    },
+    {
+      quote: "The team at Maximally understood our unique challenges in the pharmaceutical space and delivered solutions that exceeded our expectations.",
+      author: "MEERA KAPOOR",
+      company: "Saach Pharmaceuticals",
+      rating: 4,
+      result: "42% increase in brand awareness and 87% boost in engagement metrics"
+    },
+    {
+      quote: "Maximally's strategic approach helped us establish a strong digital presence in a highly competitive market. Exceptional results!",
+      author: "RAJIV GUPTA",
+      company: "Medquits Pharmaceuticals",
+      rating: 5,
+      result: "214% increase in website traffic and 76% higher conversion rate"
+    },
+    {
+      quote: "The data-driven strategies implemented by Maximally helped us reach our target audience with precision. Highly recommended!",
+      author: "SARAH MATHEWS",
+      company: "Reachroot",
+      rating: 4,
+      result: "93% growth in qualified leads and 58% reduction in acquisition costs"
+    },
+    {
+      quote: "Maximally's work on our hackathon's digital presence was nothing short of brilliant. They truly understand the tech community.",
+      author: "AMAN SINGH",
+      company: "CodeQuest/Hackskye Hackathon",
+      rating: 5,
+      result: "356% increase in participant registrations compared to previous year"
     }
   ];
 
