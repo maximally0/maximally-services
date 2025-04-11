@@ -55,7 +55,7 @@ export const SEO = ({
       <meta name="description" content={description} />
       <meta name="robots" content="index, follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="canonical" href={url} />
+      <link rel="canonical" href={url.replace('www.maximally.in', 'maximally.in')} />
       
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />

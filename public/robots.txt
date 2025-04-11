@@ -5,5 +5,7 @@ Allow: /
 # Prevent indexing of admin or private areas
 Disallow: /admin/
 Disallow: /private/
+Disallow: /api/
 
+# Add sitemap
 Sitemap: https://maximally.in/sitemap.xml

@@ -1,1 +1,7 @@
-/*    /index.html   200
+
+# Redirect www to non-www
+http://www.maximally.in/* https://maximally.in/:splat 301!
+https://www.maximally.in/* https://maximally.in/:splat 301!
+
+# Handle other redirects
+/* /index.html 200
