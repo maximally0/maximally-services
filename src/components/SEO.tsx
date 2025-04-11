@@ -19,7 +19,8 @@ export const SEO = ({
     "@type": "Organization",
     "name": "Maximally",
     "url": "https://maximally.in",
-    "logo": "https://maximally.in/logo.png",
+    "logo": "https://maximally.in/lovable-uploads/maximally-social.png",
+    "description": "AI-first digital marketing agency specializing in content engines, SEO optimization and pixel-perfect design that converts.",
     "sameAs": [
       "https://instagram.com/maximally.in",
       "https://linkedin.com/company/maximallysupplements"
