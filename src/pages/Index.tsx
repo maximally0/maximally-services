@@ -2,13 +2,10 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
-
 import FeaturesSection from '@/components/FeaturesSection';
-
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CtaSection from '@/components/CtaSection';
 import FooterSection from '@/components/FooterSection';
-
 import { SEO } from '@/components/SEO';
 
 const Index = () => {
@@ -32,20 +29,20 @@ const Index = () => {
         description="Maximally is an AI-first digital marketing agency delivering cutting-edge solutions for modern businesses. Specializing in content engines, SEO optimization, and pixel-perfect design that converts."
         canonicalUrl="https://maximally.in"
       />
-      <script type="application/ld+json">
-        {JSON.stringify(structuredData)}
-      </script>
-  return (
-    <div className="min-h-screen w-full overflow-x-hidden max-w-[100vw]">
-      <Navbar />
-      <main className="flex flex-col w-full">
-        <HeroSection />
-        <FeaturesSection />
-        <TestimonialsSection />
-        <CtaSection />
-      </main>
-      <FooterSection />
-    </div>
+      <div dangerouslySetInnerHTML={{
+        __html: `<script type="application/ld+json">${JSON.stringify(structuredData)}</script>`
+      }} />
+      <div className="min-h-screen w-full overflow-x-hidden max-w-[100vw]">
+        <Navbar />
+        <main className="flex flex-col w-full">
+          <HeroSection />
+          <FeaturesSection />
+          <TestimonialsSection />
+          <CtaSection />
+        </main>
+        <FooterSection />
+      </div>
+    </>
   );
 };
 
