@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
-import { Mail, Phone, Instagram, MessageSquare } from 'lucide-react';
+import { Mail, Phone, Instagram, MessageSquare, ArrowRight } from 'lucide-react';
 const Contact = () => {
   // Animation variants
   const containerVariants = {
