@@ -45,7 +45,16 @@ const Pricing = () => {
     }
   };
 
-  const categories: Record<string, PricingCategory> = {
+  const deliveryInfo = {
+  title: "Delivery & Terms",
+  items: [
+    { name: "Standard Delivery Time", description: "3-5 business days for most deliverables" },
+    { name: "Content Calendar", description: "Delivered within 7 days of onboarding" },
+    { name: "Revisions", description: "Each asset includes up to 2 revisions" }
+  ]
+};
+
+const categories: Record<string, PricingCategory> = {
     branding: {
       icon: <Star size={24} />,
       title: '🧠 Branding',
@@ -66,7 +75,12 @@ const Pricing = () => {
       items: [
         { name: '1-Page Landing Website', priceUSD: '$69', priceINR: '₹4,999' },
         { name: '5-Page Business Website', priceUSD: '$139', priceINR: '₹9,999' },
-        { name: 'Basic E-commerce Website', priceUSD: '$199', priceINR: '₹14,999' },
+        { 
+          name: 'Basic E-commerce Website', 
+          description: 'Includes up to 5 products, basic payment gateway setup, responsive design',
+          priceUSD: '$239', 
+          priceINR: '₹17,999' 
+        },
         { name: 'Website Maintenance (Monthly)', priceUSD: '$15/month', priceINR: '₹999/month' }
       ]
     },
@@ -121,9 +135,39 @@ const Pricing = () => {
       color: 'text-red-600',
       bgColor: 'bg-red-50',
       items: [
-        { name: 'Animated Explainer Video (60 sec)', priceUSD: '$99', priceINR: '₹6,999' },
+        { 
+          name: 'Template-Based Explainer (60 sec)', 
+          description: 'Includes template animation and professional voiceover',
+          priceUSD: '$99', 
+          priceINR: '₹6,999' 
+        },
+        { 
+          name: 'Custom Explainer Video', 
+          description: 'Custom animation with 2 revisions',
+          priceUSD: '$139', 
+          priceINR: '₹9,999' 
+        },
         { name: 'Product Demo / Promo Video', priceUSD: '$59', priceINR: '₹3,999' },
-        { name: 'Reels / Shorts (each)', priceUSD: '$15', priceINR: '₹999' }
+        { 
+          name: 'Reels / Shorts (each)', 
+          description: 'Client provides footage. Includes captions and 1 revision',
+          priceUSD: '$15', 
+          priceINR: '₹999' 
+        }
+      ]
+    },
+    influencer: {
+      icon: <Star size={24} />,
+      title: '🌟 Influencer Marketing',
+      color: 'text-purple-600',
+      bgColor: 'bg-purple-50',
+      items: [
+        { 
+          name: 'Campaign Setup', 
+          description: 'Covers discovery, outreach, and briefing for up to 3 micro-influencers',
+          priceUSD: '$39', 
+          priceINR: '₹2,999' 
+        }
       ]
     },
     packages: {
@@ -186,14 +230,17 @@ const Pricing = () => {
   const packageCards = [
     {
       title: "Starter Kit",
-      priceUSD: "$99",
-      priceINR: "₹7,499",
+      priceUSD: "$79",
+      priceINR: "₹5,999",
       features: [
         "8 social media posts",
         "2 reels",
         "1 blog article",
+        "1 email copy",
+        "1 ad creative",
         "Basic SEO setup",
-        "Monthly analytics report"
+        "Monthly analytics report",
+        "2 revisions per deliverable"
       ],
       color: "border-blue-400",
       bgColor: "bg-blue-50",
@@ -207,11 +254,16 @@ const Pricing = () => {
       features: [
         "12 social media posts",
         "4 reels",
-        "Ad management (Google or Meta)",
+        "Complete ad management:",
+        "• Ad copywriting",
+        "• Target audience setup",
+        "• Basic A/B testing",
+        "• Weekly optimization",
         "2 blog articles",
         "SEO optimization",
         "Content calendar",
-        "Bi-weekly reporting"
+        "Bi-weekly reporting",
+        "(Ad spend not included)"
       ],
       color: "border-red-400",
       bgColor: "bg-red-50",
@@ -229,6 +281,7 @@ const Pricing = () => {
         "Website maintenance & updates",
         "Branding support",
         "Custom analytics dashboard",
+        "24-hour response time on business days",
         "Dedicated account manager"
       ],
       color: "border-purple-400",
