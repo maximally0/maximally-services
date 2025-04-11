@@ -83,8 +83,22 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="mt-12 max-w-xl mx-auto">
-
+            <div className="mt-12 max-w-xl mx-auto text-center">
+              <motion.div variants={itemVariants} className="bg-blue-50 p-8 border-2 border-maximally-dark">
+                <h2 className="font-press-start text-xl mb-4">QUICK RESPONSE FORM</h2>
+                <p className="font-jetbrains text-gray-700 mb-6">
+                  Want our team to reach out to you? Fill out our quick response form and we'll get back to you within 24 hours.
+                </p>
+                <a 
+                  href="https://forms.gle/BYyGYnontfDknyxQ6" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="pixel-button bg-maximally-blue text-white font-jetbrains font-bold py-3 px-6 inline-flex items-center gap-2"
+                >
+                  <span className="relative z-10">FILL OUT FORM</span>
+                  <ArrowRight size={16} className="relative z-10" />
+                </a>
+              </motion.div>
             </div>
           </motion.div>
         </div>
