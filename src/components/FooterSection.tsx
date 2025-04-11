@@ -6,7 +6,9 @@ import { Link } from 'react-router-dom';
 const FooterSection = () => {
   const socialLinks = [
     { icon: <Instagram size={20} />, label: 'Instagram', href: 'https://www.instagram.com/maximally.in/' },
-    { icon: <Linkedin size={20} />, label: 'LinkedIn', href: 'https://www.linkedin.com/company/maximallysupplements' },
+    { icon: <Linkedin size={20} />, label: 'LinkedIn', href: 'https://www.linkedin.com/company/maximally' },
+    { icon: <Twitter size={20} />, label: 'Twitter', href: 'https://twitter.com/maximally' },
+    { icon: <Github size={20} />, label: 'GitHub', href: 'https://github.com/maximally' },
   ];
 
   return (
