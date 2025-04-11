@@ -1,0 +1,80 @@
+⚙️ Replit Prompt (SEO Coding Only, Updated Handles)
+txt
+Copy
+Edit
+The site is already built using Vite + React + Tailwind. I want you to apply full SEO optimization through code. Here's exactly what to implement:
+
+---
+
+✅ 1. Create a reusable `<SEO />` component using `react-helmet-async`. Props:
+
+- `title`
+- `description`
+- `image`
+- `url`
+
+Defaults:
+
+- Title: "Maximally – AI x Marketing, Pixel by Pixel"
+- Description: "Maximally is an AI-first digital marketing agency helping startups scale with automation, design, and strategy. Not your average agency 👾"
+- OG Image: fallback image like `/og.png`
+- Include canonical link, robots, and viewport meta.
+
+---
+
+✅ 2. Inject `JSON-LD` schema into the `<SEO />` component like this:
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Maximally",
+  "url": "https://maximally.in",
+  "logo": "https://maximally.in/logo.png",
+  "sameAs": [
+    "https://instagram.com/maximally.in",
+    "https://linkedin.com/company/maximallysupplements"
+  ]
+}
+✅ 3. Fix and verify sitemap:
+
+In sitemap.xml, ensure no blank lines above <?xml version="1.0" encoding="UTF-8"?>
+
+Make sure sitemap URL works at https://maximally.in/sitemap.xml
+
+If missing, generate based on site routes.
+
+✅ 4. robots.txt should be:
+
+makefile
+Copy
+Edit
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Sitemap: https://maximally.in/sitemap.xml
+✅ 5. Site-wide improvements:
+
+Add loading="lazy" and alt attributes to all <img> tags
+
+Preload pixel fonts (Press Start 2P, VT323, JetBrains Mono) in index.html
+
+Add <meta name="robots" content="index, follow"> globally
+
+Add favicons + Apple touch icons in <head>
+
+Ensure CLS/layout shifts on mobile are minimized
+
+✅ 6. Comment all SEO code clearly for future edits. Do not touch design or UI/UX.
+
+Return only the updated SEO component file and changes to index.html or App.tsx if applicable.
+
+yaml
+Copy
+Edit
+
+---
+
+Copy-paste this straight into Replit's GPT prompt or use it with any AI code assistant.  
+Let me know when you're ready to level up with dynamic meta based on blog posts, landing pages, or AI summ
