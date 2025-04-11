@@ -35,7 +35,17 @@ const BlogPost = () => {
           </header>
           
           <div 
-            className="font-jetbrains prose prose-lg mx-auto prose-headings:font-press-start prose-headings:text-maximally-dark prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4 prose-p:text-gray-700 prose-p:mb-6 prose-ul:list-disc prose-ul:pl-6 prose-ul:mb-6 prose-li:text-gray-700 prose-li:mb-2 prose-strong:text-maximally-dark prose-strong:font-bold prose-em:text-maximally-blue prose-em:font-normal"
+            className="font-jetbrains prose prose-lg mx-auto 
+              prose-headings:font-press-start 
+              prose-h1:text-4xl prose-h1:text-maximally-dark prose-h1:mb-8
+              prose-h2:text-3xl prose-h2:text-maximally-blue prose-h2:mt-12 prose-h2:mb-6 
+              prose-p:text-gray-700 prose-p:text-lg prose-p:leading-relaxed prose-p:mb-6 
+              prose-ul:list-disc prose-ul:pl-6 prose-ul:mb-8 
+              prose-li:text-gray-700 prose-li:mb-3 
+              prose-strong:text-maximally-red prose-strong:font-bold 
+              prose-em:text-maximally-blue prose-em:font-normal prose-em:bg-blue-50 prose-em:px-2 prose-em:py-1 prose-em:rounded
+              prose-blockquote:border-maximally-blue prose-blockquote:bg-blue-50 prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:rounded-r
+              [&>h2>span]:text-maximally-red"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </article>

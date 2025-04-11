@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
 
       <p>At Maximally, we work with growth-hungry brands that want more than just "likes" and "traffic." They want results. And in today's landscape, those results are powered by algorithms, automation, and intelligent content strategy.</p>
 
-      <h2>🚀 What Does "AI-First Marketing" Actually Mean?</h2>
+      <h2><span>🚀</span> What Does "AI-First Marketing" Actually Mean?</h2>
       <p>AI-first doesn't mean you ditch your team and hand the wheel over to ChatGPT. It means integrating artificial intelligence into every part of your marketing funnel — from audience research and content creation to distribution, analysis, and retargeting.</p>
 
       <p>We're not talking about running a few automated ads. We're talking about building marketing engines that:</p>
