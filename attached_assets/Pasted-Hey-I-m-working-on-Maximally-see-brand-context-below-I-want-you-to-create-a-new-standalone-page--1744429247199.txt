@@ -1,0 +1,50 @@
+Hey, I’m working on Maximally (see brand context below). I want you to create a new standalone page called **“AI Services (Experimental)”** that matches our tone, aesthetic, and mission.
+
+### Page Structure:
+- **Hero Section:**
+  Title: “AI x Growth. Experimental. Legendary.”
+  Subtext: “Explore our cutting-edge AI services — from chatbots to full automation systems. Built for those ready to move fast.”
+
+  Add a call-to-action button:  
+  **[Book Strategy Call]** or **[Get Started]**
+
+- **Services Section (Grid Cards, ShadCN + Tailwind):**
+  Use electric pixel-style cards with hover animations. Here are the service blocks (feel free to group or style them in 2–3 columns):
+
+  1. **AI Readiness Audit** – ₹16,500 / $199  
+     → “Find out how ready your biz is to use AI. No fluff. Just clarity.”
+
+  2. **Custom Chatbot Development** – ₹49,500+ / $599+  
+     → “We build AI bots that talk like humans and convert like beasts.”
+
+  3. **LLM Integration & Fine-Tuning** – ₹1.65L+ / $1999+  
+     → “Plug GPT-like power directly into your systems — tailored to your use case.”
+
+  4. **Automation Modules (Zapier, Make, APIs)** – ₹82,500+ / $999+  
+     → “Let AI do the boring stuff. From lead gen to internal ops.”
+
+  5. **AI Strategy Session (1 hour)** – ₹10,800 / $129  
+     → “Sit down with our AI nerds. Get a plan you can execute tomorrow.”
+
+  6. **Full-Stack AI Setup** – ₹4.15L+ / $4999+  
+     → “Done-for-you automation + integration + optimization. Go full Iron Man.”
+
+- **Experimental Tag:**
+  Add a small floating label or tag near the page title saying:  
+  **“Experimental – Early Access”**  
+  with some pixel-style animation or flicker effect.
+
+- **Styling:**
+  - Font: JetBrains Mono or similar
+  - Color scheme: White, Electric Blue, Warm Red, Deep Black
+  - Use pixel-style dividers, glows, and soft shadows
+  - Add subtle animated sprites or icons (bots, lightning, etc.)
+  - CTA buttons with hover-glitch effects
+
+- **Bottom Section:**
+  “Still not sure what fits? Let’s talk.”  
+  → Button: **[Book a Free AI Consult]**
+
+Build this as a new route `/ai-services` in the React frontend. Animate sections on scroll using Framer Motion.
+
+Make sure everything screams **experimental + badass + Maximally.**
