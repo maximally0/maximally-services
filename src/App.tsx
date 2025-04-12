@@ -34,7 +34,8 @@ const App = () => (
             <Route path="/experimentalservices" element={<ExperimentalServices />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
-            <Route path="/ai-services" element={<AiServices />} /> {/* Added route for AiServices */}
+            <Route path="/ai-services" element={<AiServices />} />
+            <Route path="/services/chatbot-development-chandigarh" element={<ChatbotDevelopment />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
