@@ -312,8 +312,8 @@ const categories: Record<string, PricingCategory> = {
                 AI x Marketing
               </Badge>
               <h1 className="font-press-start text-4xl md:text-5xl text-maximally-dark mb-6">
-                Services That<br/>
-                <span className="text-maximally-blue">Scale.</span><br/>
+                Digital Marketing<br/>
+                <span className="text-maximally-blue">Services That</span><br/>
                 <span className="text-maximally-red">Convert.</span>
               </h1>
             </div>

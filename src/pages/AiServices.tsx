@@ -13,7 +13,14 @@ const services = [
     title: "AI Readiness Audit",
     price: { usd: "$199", inr: "₹16,500" },
     description: "Find out how ready your biz is to use AI. No fluff. Just clarity.",
-    icon: <Brain className="w-6 h-6" />
+    icon: <Brain className="w-6 h-6" />,
+    features: [
+      "Full tech stack analysis",
+      "AI integration opportunities",
+      "ROI projection report",
+      "Implementation roadmap",
+      "Risk assessment"
+    ]
   },
   {
     title: "Custom Chatbot Development",
@@ -99,13 +106,27 @@ export default function AiServices() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
+              className="group"
             >
-              <div className="pixel-card p-6">
-                <div className="mb-4 text-maximally-blue">{service.icon}</div>
+              <div 
+                className="pixel-card p-6 cursor-pointer relative overflow-hidden transition-all duration-300 hover:scale-105"
+                onClick={() => window.location.href = `/ai-services/${service.title.toLowerCase().replace(/\s+/g, '-')}`}
+              >
+                <div className="mb-4 text-maximally-blue group-hover:scale-110 transition-transform">{service.icon}</div>
                 <h3 className="font-press-start text-xl mb-2">{service.title}</h3>
                 <p className="font-jetbrains mb-4">{service.description}</p>
-                <div className="font-jetbrains text-maximally-blue font-bold">
+                <div className="font-jetbrains text-maximally-blue font-bold mb-4">
                   {service.price.usd} / {service.price.inr}
+                </div>
+                <div className="absolute bottom-0 left-0 w-full bg-maximally-blue text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform">
+                  <ul className="font-jetbrains text-sm space-y-2">
+                    {service.features?.map((feature, i) => (
+                      <li key={i} className="flex items-center gap-2">
+                        <Check size={16} />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </motion.div>
