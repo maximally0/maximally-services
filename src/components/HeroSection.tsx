@@ -72,8 +72,6 @@ const HeroSection = () => {
             </div>
             <div className="flex justify-center gap-4 text-sm">
               <a href="/blog" className="text-maximally-blue hover:text-maximally-dark transition-colors">Read Our Blog</a>
-              <span className="text-gray-400">•</span>
-              <a href="/experimentalservices" className="text-maximally-blue hover:text-maximally-dark transition-colors">Experimental Services</a>
             </div>
           </div>
         </div>

@@ -3,7 +3,6 @@ import { lazy, Suspense } from 'react';
 import { SEO } from '@/components/SEO';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
-import ServicesSection from '@/components/ServicesSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CtaSection from '@/components/CtaSection';
@@ -71,7 +70,6 @@ const Index = () => {
           <Suspense fallback={<div className="h-screen flex items-center justify-center">Loading...</div>}>
             <HeroSection />
             <FeaturesSection />
-            <ServicesSection />
             <TestimonialsSection />
             <CtaSection />
           </Suspense>
