@@ -13,7 +13,7 @@ const routes = [
   { path: '/', label: 'Home' },
   { path: '/blog', label: 'Blog' },
   { path: '/pricing', label: 'Pricing' },
-  { path: '/experimentalservices', label: 'Experimental' },
+  
   { path: '/contact', label: 'Contact' },
   { path: '/privacy-policy', label: 'Privacy Policy' },
   { path: '/terms-of-service', label: 'Terms of Service' },
