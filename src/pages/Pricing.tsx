@@ -248,16 +248,17 @@ const categories: Record<string, PricingCategory> = {
                 variant="outline" 
                 className="absolute -top-8 left-1/2 -translate-x-1/2 border-maximally-blue text-maximally-blue minecraft-border"
               >
-                AI x Marketing
+                AI × MARKETING
               </Badge>
               <h1 className="font-press-start text-4xl md:text-5xl text-maximally-dark mb-6">
-                Digital Marketing<br/>
-                <span className="text-maximally-blue">Services That</span><br/>
-                <span className="text-maximally-red">Convert.</span>
+                PIXEL BY PIXEL
               </h1>
+              <h2 className="font-press-start text-2xl md:text-3xl text-maximally-blue mb-4">
+                Build Brands That<br/>Break the Algorithm
+              </h2>
             </div>
             <p className="font-jetbrains text-lg md:text-xl mb-8 text-gray-600 max-w-3xl mx-auto">
-              Future-proof marketing solutions powered by AI. Built for brands that want to move fast and break records.
+              We don't just design. We engineer brand performance — from launch to scale — with AI precision and real-world marketing psychology.
             </p>
 
             {/* Currency Toggle */}
