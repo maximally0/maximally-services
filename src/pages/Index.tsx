@@ -69,6 +69,7 @@ const Index = () => {
         <main className="flex flex-col w-full">
           <HeroSection />
           <FeaturesSection />
+          <ServicesSection />
           <TestimonialsSection />
           <CtaSection />
         </main>

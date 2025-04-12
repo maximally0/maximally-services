@@ -12,7 +12,7 @@ import {
 const routes = [
   { path: '/', label: 'Home' },
   { path: '/blog', label: 'Blog' },
-  { path: '/pricing', label: 'Pricing' },
+  { path: '/pricing', label: 'All Services' },
   
   { path: '/contact', label: 'Contact' },
   { path: '/privacy-policy', label: 'Privacy Policy' },
