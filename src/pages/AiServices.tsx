@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
-import { Card } from '@/components/ui/card';
 import { Zap, Bot, Brain, Cog, Clock, Rocket } from 'lucide-react';
+import { SEO } from '@/components/SEO';
 
 const services = [
   {
@@ -49,31 +49,37 @@ const services = [
 
 export default function AiServices() {
   return (
-    <div className="min-h-screen bg-black text-white font-mono">
+    <div className="min-h-screen bg-white">
+      <SEO 
+        title="AI Services | Maximally"
+        description="Explore our cutting-edge AI services — from chatbots to full automation systems. Built for those ready to move fast."
+      />
       <Navbar />
       
       {/* Hero Section */}
       <motion.section 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="container mx-auto px-4 pt-24 pb-16 text-center"
+        className="container mx-auto px-4 pt-32 pb-16 text-center"
       >
         <div className="relative inline-block">
           <Badge 
             variant="outline" 
-            className="absolute -top-8 left-1/2 -translate-x-1/2 border-blue-500 text-blue-500 animate-pulse"
+            className="absolute -top-8 left-1/2 -translate-x-1/2 border-maximally-blue text-maximally-blue minecraft-border"
           >
             Experimental – Early Access
           </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-red-500">
-            AI x Growth. Experimental. Legendary.
+          <h1 className="font-press-start text-4xl md:text-5xl text-maximally-dark mb-6">
+            AI x Growth.<br/>
+            <span className="text-maximally-blue">Experimental.</span><br/>
+            <span className="text-maximally-red">Legendary.</span>
           </h1>
         </div>
-        <p className="text-lg md:text-xl mb-8 text-gray-300">
+        <p className="font-jetbrains text-lg md:text-xl mb-8 text-gray-600 max-w-3xl mx-auto">
           Explore our cutting-edge AI services — from chatbots to full automation systems. Built for those ready to move fast.
         </p>
         <Button 
-          className="bg-blue-600 hover:bg-blue-700 transition-all hover:scale-105 text-white px-8 py-6 text-lg"
+          className="minecraft-border bg-maximally-blue hover:bg-maximally-dark text-white px-8 py-6 text-lg font-jetbrains"
           onClick={() => window.location.href = '/contact'}
         >
           Book Strategy Call
@@ -94,14 +100,14 @@ export default function AiServices() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="p-6 bg-gray-900 border-blue-500/20 hover:border-blue-500 transition-all hover:shadow-lg hover:shadow-blue-500/20">
-                <div className="mb-4 text-blue-500">{service.icon}</div>
-                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                <p className="text-gray-400 mb-4">{service.description}</p>
-                <div className="text-blue-500 font-bold">
+              <div className="pixel-card p-6">
+                <div className="mb-4 text-maximally-blue">{service.icon}</div>
+                <h3 className="font-press-start text-xl mb-2">{service.title}</h3>
+                <p className="font-jetbrains mb-4">{service.description}</p>
+                <div className="font-jetbrains text-maximally-blue font-bold">
                   {service.price.usd} / {service.price.inr}
                 </div>
-              </Card>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -113,9 +119,9 @@ export default function AiServices() {
         animate={{ opacity: 1 }}
         className="container mx-auto px-4 py-16 text-center"
       >
-        <h2 className="text-2xl md:text-3xl mb-8">Still not sure what fits? Let's talk.</h2>
+        <h2 className="font-press-start text-2xl md:text-3xl mb-8 text-maximally-dark">Still not sure what fits? Let's talk.</h2>
         <Button 
-          className="bg-red-600 hover:bg-red-700 transition-all hover:scale-105 text-white px-8 py-6 text-lg"
+          className="minecraft-border bg-maximally-red hover:bg-maximally-dark text-white px-8 py-6 text-lg font-jetbrains"
           onClick={() => window.location.href = '/contact'}
         >
           Book a Free AI Consult
