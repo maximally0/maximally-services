@@ -1,3 +1,4 @@
+
 import { Helmet } from 'react-helmet-async';
 
 interface SEOProps {
@@ -6,47 +7,60 @@ interface SEOProps {
   canonicalUrl?: string;
   ogImage?: string;
   type?: string;
+  city?: string;
+  schema?: object;
 }
 
 export const SEO = ({
-  title = "AI × Marketing Agency | Maximally",
-  description = "We engineer brand performance with AI precision and real-world marketing psychology. Transform your digital presence with our AI-powered marketing solutions.",
+  title = "AI Marketing Agency in Chandigarh | Digital Branding Services | Maximally",
+  description = "Top-rated AI marketing agency in Chandigarh, Delhi & Dehradun. Transform your startup with AI-powered digital marketing, branding & paid advertising services.",
   canonicalUrl = "https://maximally.in",
-  ogImage = "/public/lovable-uploads/maximally-social.png",
-  type = "website"
+  ogImage = "/lovable-uploads/maximally-social.png",
+  type = "website",
+  city = "Chandigarh",
+  schema
 }: SEOProps) => {
-  const schema = {
+  const defaultSchema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "MarketingAgency",
     "name": "Maximally",
     "description": description,
     "url": canonicalUrl,
-    "logo": `${canonicalUrl}/favicon.ico`,
-    "sameAs": [
-      "https://twitter.com/maximallyai",
-      "https://linkedin.com/company/maximally"
-    ],
+    "logo": `${canonicalUrl}${ogImage}`,
+    "areaServed": ["Chandigarh", "Delhi", "Dehradun", "Global"],
+    "priceRange": "₹₹₹",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Chandigarh",
+      "addressLocality": city,
+      "addressRegion": "Chandigarh",
       "addressCountry": "IN"
     },
-    "serviceType": "AI Marketing Services"
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "50"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/maximally",
+      "https://twitter.com/maximallyai",
+      "https://instagram.com/maximally.in"
+    ]
   };
 
   return (
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
       <link rel="canonical" href={canonicalUrl} />
-
+      
       {/* Open Graph */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content={type} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:locale" content="en_IN" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -54,9 +68,13 @@ export const SEO = ({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
 
+      {/* Location */}
+      <meta name="geo.region" content="IN-CH" />
+      <meta name="geo.placename" content={city} />
+      
       {/* Schema.org */}
       <script type="application/ld+json">
-        {JSON.stringify(schema)}
+        {JSON.stringify(schema || defaultSchema)}
       </script>
     </Helmet>
   );

@@ -4,4 +4,8 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 
+# Sitemaps
 Sitemap: https://maximally.in/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10

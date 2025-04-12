@@ -57,9 +57,31 @@ const Index = () => {
   return (
     <>
       <SEO 
-        title="AI-First Digital Marketing Agency"
-        description="Maximally is an AI-first digital marketing agency delivering cutting-edge solutions for modern businesses. Specializing in content engines, SEO optimization, and pixel-perfect design that converts."
+        title="AI Marketing Agency in Chandigarh | Digital Branding for Startups | Maximally"
+        description="Leading AI marketing agency in Chandigarh & Delhi NCR. Transform your startup with AI-powered digital marketing, branding & paid advertising services. Trusted by 50+ startups across India."
         canonicalUrl="https://maximally.in"
+        city="Chandigarh"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Maximally - AI Marketing Agency",
+          "image": "https://maximally.in/lovable-uploads/maximally-social.png",
+          "description": "AI-powered digital marketing and branding agency specializing in startup growth, paid advertising, and influencer marketing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Chandigarh",
+            "addressRegion": "Chandigarh",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "30.7333",
+            "longitude": "76.7794"
+          },
+          "areaServed": ["Chandigarh", "Delhi", "Dehradun", "Global"],
+          "serviceType": ["AI Marketing", "Digital Branding", "Paid Advertising", "Influencer Marketing"],
+          "priceRange": "₹₹₹"
+        }}
       />
       <div dangerouslySetInnerHTML={{
         __html: `<script type="application/ld+json">${JSON.stringify(structuredData)}</script>`
