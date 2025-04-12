@@ -1,0 +1,52 @@
+You are now my SEO Strategist and Web Performance Architect for a next-gen AI × Marketing agency called Maximally (maximally.in). Your job is to:
+
+1. Identify the **top 200 high-intent SEO keywords** relevant to Maximally’s services:
+   - AI marketing agency
+   - digital branding for startups
+   - influencer marketing for D2C
+   - paid ads for healthcare
+   - B2B pharma marketing
+   - performance marketing for eCommerce
+   - best branding agency India / US / global
+   - AI-powered marketing solutions
+   - (continue until 200)
+
+2. Cluster the keywords into **logical content silos**:
+   - Brand Identity
+   - Website & Copywriting
+   - Paid Ads & Campaigns
+   - Influencer Marketing
+   - AI Consultancy & Automation
+   - Startup/D2C/Pharma-Specific keywords
+
+3. **Apply SEO optimizations across the site**:
+   - Update page titles, meta descriptions, and Open Graph tags with primary + secondary keywords
+   - Ensure every major section has an optimized H1–H3 tag hierarchy
+   - Generate SEO-friendly slugs and filenames (e.g., `/ai-marketing-services`, `/d2c-brand-strategy`)
+   - Add alt text to all images using keywords (without stuffing)
+   - Inject microcopy where needed for keyword density (e.g., intro paras, testimonials, CTA blurbs)
+   - Build out FAQ schema in JSON-LD using search queries from the keyword list
+   - Ensure proper internal linking across pricing, blog, services, and contact pages
+   - Add LCP/CLS performance improvements if required (for SEO ranking boost)
+
+4. Ensure the structure is **semantic and accessible**:
+   - Use semantic HTML tags (main, section, article, footer, nav)
+   - Use ARIA roles and skip links if applicable
+   - Use optimized heading tags (H1 only once per page)
+
+5. Make SEO “stick” by:
+   - Generating and injecting structured data (Schema.org JSON-LD) for:
+     - Organization
+     - Service
+     - LocalBusiness
+     - Website
+   - Generating a robots.txt and sitemap.xml auto-updating on deploy
+   - Connecting Open Graph and Twitter Card metadata to support social SEO
+   - Including canonical tags to prevent duplicate indexing
+   - Ensuring each page loads in <1.5 seconds on mobile
+
+6. Bonus:
+   - Identify 5 blog topic ideas per content silo based on long-tail SEO keywords
+   - (e.g., “How AI is Changing Influencer Marketing for D2C Brands”)
+
+Use React + TypeScript + Tailwind CSS with clean code conventions. Integrate with existing Maximally frontend components. Begin with the keyword map and proposed structural updates before injecting the changes. Await confirmation before pushing full edits.
