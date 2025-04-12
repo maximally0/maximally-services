@@ -14,7 +14,8 @@ import TermsOfService from "./pages/TermsOfService";
 import ExperimentalServices from "./pages/ExperimentalServices";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
-import AiServices from './pages/AiServices'; // Added import for AiServices
+import AiServices from './pages/AiServices';
+import ChatbotDevelopment from './pages/ChatbotDevelopment';
 
 const queryClient = new QueryClient();
 
