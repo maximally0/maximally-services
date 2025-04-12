@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
@@ -293,7 +292,7 @@ const categories: Record<string, PricingCategory> = {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      
+
       <motion.div 
         className="pt-32 pb-20 px-6"
         initial="hidden"
@@ -305,11 +304,23 @@ const categories: Record<string, PricingCategory> = {
             className="text-center mb-16"
             variants={itemVariants}
           >
-            <h1 className="font-press-start text-3xl md:text-4xl text-maximally-dark mb-4">OUR SERVICES & PRICING</h1>
-            <p className="font-jetbrains text-gray-600 max-w-2xl mx-auto mb-6">
-              Transparent, affordable, and actually helpful.
+            <div className="relative inline-block">
+              <Badge 
+                variant="outline" 
+                className="absolute -top-8 left-1/2 -translate-x-1/2 border-maximally-blue text-maximally-blue minecraft-border"
+              >
+                AI x Marketing
+              </Badge>
+              <h1 className="font-press-start text-4xl md:text-5xl text-maximally-dark mb-6">
+                Services That<br/>
+                <span className="text-maximally-blue">Scale.</span><br/>
+                <span className="text-maximally-red">Convert.</span>
+              </h1>
+            </div>
+            <p className="font-jetbrains text-lg md:text-xl mb-8 text-gray-600 max-w-3xl mx-auto">
+              Future-proof marketing solutions powered by AI. Built for brands that want to move fast and break records.
             </p>
-            
+
             {/* Currency Toggle */}
             <div className="flex justify-center items-center mb-4">
               <Button 
@@ -322,7 +333,7 @@ const categories: Record<string, PricingCategory> = {
               </Button>
             </div>
           </motion.div>
-          
+
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20"
             variants={itemVariants}
@@ -341,7 +352,7 @@ const categories: Record<string, PricingCategory> = {
                     </Badge>
                   </div>
                 )}
-                
+
                 <div className="p-8 bg-white bg-opacity-90">
                   <h3 className="font-press-start text-lg mb-4">{pkg.title}</h3>
                   <div className="mb-6">
@@ -350,7 +361,7 @@ const categories: Record<string, PricingCategory> = {
                     </span>
                     <span className="text-gray-600 font-jetbrains">/month</span>
                   </div>
-                  
+
                   <ul className="space-y-3 mb-8">
                     {pkg.features.map((feature, i) => (
                       <li key={i} className="flex items-start gap-2 font-jetbrains">
@@ -359,7 +370,7 @@ const categories: Record<string, PricingCategory> = {
                       </li>
                     ))}
                   </ul>
-                  
+
                   <motion.a 
                     href="/contact"
                     className={`pixel-button ${pkg.btnColor} text-white font-jetbrains font-medium py-3 w-full flex items-center justify-center gap-2`}
@@ -373,10 +384,10 @@ const categories: Record<string, PricingCategory> = {
               </motion.div>
             ))}
           </motion.div>
-          
+
           <motion.div variants={itemVariants} className="bg-white minecraft-border p-6">
             <h2 className="font-press-start text-2xl mb-6">ALL SERVICES</h2>
-            
+
             <Accordion type="single" collapsible className="w-full">
               {Object.entries(categories).map(([key, category]) => (
                 <AccordionItem key={key} value={key} className="border-b border-gray-200">
@@ -410,7 +421,7 @@ const categories: Record<string, PricingCategory> = {
               ))}
             </Accordion>
           </motion.div>
-          
+
           <motion.div 
             className="mt-20 text-center"
             variants={itemVariants}
@@ -434,7 +445,7 @@ const categories: Record<string, PricingCategory> = {
           </motion.div>
         </div>
       </motion.div>
-      
+
       <FooterSection />
     </div>
   );
