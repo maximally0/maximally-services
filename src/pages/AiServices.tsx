@@ -26,31 +26,66 @@ const services = [
     title: "Custom Chatbot Development",
     price: { usd: "$599+", inr: "₹49,500+" },
     description: "We build AI bots that talk like humans and convert like beasts.",
-    icon: <Bot className="w-6 h-6" />
+    icon: <Bot className="w-6 h-6" />,
+    features: [
+      "Custom conversation flows",
+      "Multi-platform integration",
+      "24/7 automated support",
+      "Analytics dashboard",
+      "Weekly optimization reports"
+    ]
   },
   {
     title: "LLM Integration & Fine-Tuning",
     price: { usd: "$1999+", inr: "₹1.65L+" },
     description: "Plug GPT-like power directly into your systems — tailored to your use case.",
-    icon: <Cog className="w-6 h-6" />
+    icon: <Cog className="w-6 h-6" />,
+    features: [
+      "Custom model training",
+      "API integration setup",
+      "Performance monitoring",
+      "Data security protocols",
+      "Monthly model updates"
+    ]
   },
   {
     title: "Automation Modules",
     price: { usd: "$999+", inr: "₹82,500+" },
     description: "Let AI do the boring stuff. From lead gen to internal ops.",
-    icon: <Zap className="w-6 h-6" />
+    icon: <Zap className="w-6 h-6" />,
+    features: [
+      "Workflow automation",
+      "Lead scoring system",
+      "Email sequence automation",
+      "Task prioritization",
+      "Performance tracking"
+    ]
   },
   {
     title: "AI Strategy Session",
     price: { usd: "$129", inr: "₹10,800" },
     description: "Sit down with our AI nerds. Get a plan you can execute tomorrow.",
-    icon: <Clock className="w-6 h-6" />
+    icon: <Clock className="w-6 h-6" />,
+    features: [
+      "90-minute consultation",
+      "Custom action plan",
+      "Tool recommendations",
+      "Budget optimization",
+      "Priority roadmap"
+    ]
   },
   {
     title: "Full-Stack AI Setup",
     price: { usd: "$4999+", inr: "₹4.15L+" },
     description: "Done-for-you automation + integration + optimization. Go full Iron Man.",
-    icon: <Rocket className="w-6 h-6" />
+    icon: <Rocket className="w-6 h-6" />,
+    features: [
+      "Complete system integration",
+      "Custom AI development",
+      "Staff training",
+      "24/7 support",
+      "Quarterly updates"
+    ]
   }
 ];
 
