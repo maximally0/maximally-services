@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Check, ArrowRight, Package, Star, Globe, Instagram, Search, Target, FileText, Video, Zap, Trophy, Repeat } from 'lucide-react';
+import { Check, ArrowRight, Package, Star, Globe, Instagram, Search, Target, FileText, Video, Zap, Trophy, Repeat, Brain } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
@@ -169,32 +169,6 @@ const categories: Record<string, PricingCategory> = {
         }
       ]
     },
-    packages: {
-      icon: <Package size={24} />,
-      title: '📦 Packages (Best Value)',
-      color: 'text-maximally-blue',
-      bgColor: 'bg-blue-50',
-      items: [
-        { 
-          name: 'Starter Kit', 
-          priceUSD: '$99/month',
-          priceINR: '₹7,499/month',
-          description: '8 social posts, 2 reels, 1 blog, basic SEO'
-        },
-        { 
-          name: 'Growth Kit', 
-          priceUSD: '$199/month',
-          priceINR: '₹14,999/month',
-          description: '12 posts, 4 reels, ad management, 2 blogs, SEO'
-        },
-        { 
-          name: 'Full Stack Marketing', 
-          priceUSD: '$349/month',
-          priceINR: '₹24,999/month',
-          description: 'Social, ads, blogs, SEO, website updates, branding & analytics'
-        }
-      ]
-    },
     addons: {
       icon: <Zap size={24} />,
       title: '⚡ Add-Ons',
@@ -203,8 +177,35 @@ const categories: Record<string, PricingCategory> = {
       items: [
         { name: 'Extra Reel', priceUSD: '$15', priceINR: '₹999' },
         { name: 'Extra Blog', priceUSD: '$7', priceINR: '₹499' },
-        { name: 'Email Campaign', priceUSD: '$9', priceINR: '₹599' },
-        { name: 'WhatsApp Campaign Setup', priceUSD: '$19', priceINR: '₹1,499' }
+        { name: 'Email Campaign', priceUSD: '$9', priceINR: '₹599' }
+      ]
+    },
+    ai_consultancy: {
+      icon: <Brain size={24} />,
+      title: '🤖 AI Consultancy',
+      color: 'text-blue-600',
+      bgColor: 'bg-blue-50',
+      items: [
+        { 
+          name: 'AI Integration Consultation',
+          description: 'We help businesses integrate AI into their workflows, from automating tasks to leveraging AI for smarter decision-making',
+          priceUSD: '$50',
+          priceINR: '₹3,750'
+        }
+      ]
+    },
+    brand_consultancy: {
+      icon: <Star size={24} />,
+      title: '✨ Brand Consultancy',
+      color: 'text-purple-600',
+      bgColor: 'bg-purple-50',
+      items: [
+        {
+          name: 'Brand Strategy Consultation',
+          description: 'We guide startups and businesses through brand strategy, including naming, positioning, visual identity, and go-to-market storytelling',
+          priceUSD: '$50',
+          priceINR: '₹3,750'
+        }
       ]
     }
   };
