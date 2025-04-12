@@ -1,0 +1,68 @@
+Update the pricing section to the following structure and content:
+
+Title:
+"AI × MARKETING, PIXEL BY PIXEL"
+Subheading:
+"Build Brands That Break the Algorithm."
+Description:
+"We don’t just design. We engineer brand performance — from launch to scale — with AI precision and real-world marketing psychology."
+
+Pricing Cards:
+
+1. Pixel Kit – ₹21,000/month
+Description:
+- Strategic Logo + Brand System  
+- Social Media Starter Pack (Templates + Captions)  
+- Lightning-Fast 1-Page Website  
+- 2 Scroll-Stopper Ad Creatives  
+- Influencer Discovery List  
+- 2 Rounds of Revisions  
+- Delivered in 7 Days  
+Ideal For:
+- First-time founders building digital-first brands  
+- Creators & consultants launching personal brands  
+- Health & wellness coaches going online  
+- D2C MVPs testing product-market fit  
+- Fast-launch entrepreneurs  
+Button: "Let’s Build →"
+
+2. Neural Kit – ₹45,000/month
+Description:
+- Everything in Pixel Kit  
+- Multi-Page Conversion Website  
+- Meta & Google Ads Setup  
+- Influencer Coordination + Reachout Scripts  
+- 1:1 Brand Strategy Call  
+- Priority Revisions + Support  
+- Delivered in 14 Days  
+Ideal For:
+- Early-stage funded startups  
+- Healthcare & Pharma going digital  
+- Startups scaling beyond founder-led growth  
+- B2B brands building authority  
+- Fast-scaling D2C  
+Button: "Let’s Scale →"
+
+3. Cortex Kit – ₹90,000/month
+Description:
+- Full Branding Suite  
+- Website with Persuasive Copywriting  
+- 2 Months Ads Management  
+- Influencer Campaign Execution  
+- Monthly Strategy Consults  
+- VIP Priority Support  
+- Delivered in 30 Days  
+Ideal For:
+- VC-backed brands scaling nationally  
+- Tech-enabled pharma or supplement companies  
+- CPG/wellness brands going omni-channel  
+- Founders building long-term growth systems  
+- Teams replacing patchy freelancers with plug-and-play marketing  
+Button: "Dominate Your Niche →"
+
+Below pricing cards, add a "Custom Stack" CTA:
+Header: "Need a Custom Stack?"
+Subtext: "Tell us what you’re building. We’ll architect a marketing system that fits your goals, not just your budget."
+Button: "Contact Us →"
+
+Keep existing footer, email (hello@maximally.in), phone (+91 9041260790), and Instagram handle (@maximally.in) as-is.
