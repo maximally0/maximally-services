@@ -40,9 +40,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex space-x-8">
-          <NavLink to="/ai-services">AI Services</NavLink>
           <NavLink to="/pricing">Digital Marketing Services</NavLink>
-          <NavLink to="/experimentalservices">Experimental</NavLink>
           <NavLink to="/blog">Blog</NavLink>
           {location.pathname === '/' ? (
             <>
@@ -66,9 +64,7 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-white border-t border-maximally-dark border-opacity-10 shadow-lg">
             <div className="flex flex-col items-center py-4">
-              <NavLink to="/ai-services" mobile onClick={() => setIsOpen(false)}>AI Services</NavLink>
               <NavLink to="/pricing" mobile onClick={() => setIsOpen(false)}>All Services</NavLink>
-              <NavLink to="/experimentalservices" mobile onClick={() => setIsOpen(false)}>Experimental</NavLink>
               {location.pathname === '/' ? (
                 <>
                   <NavLink href="#features" mobile onClick={() => setIsOpen(false)}>Features</NavLink>
