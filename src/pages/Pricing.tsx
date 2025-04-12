@@ -138,6 +138,18 @@ const categories: Record<string, PricingCategory> = {
           priceINR: '₹3,750'
         }
       ]
+    },
+    addons: {
+      icon: <Zap size={24} />,
+      title: '⚡ Optional Add-Ons',
+      color: 'text-yellow-600',
+      bgColor: 'bg-yellow-50',
+      items: [
+        { name: 'Additional Ad Creative Set', priceUSD: '$49', priceINR: '₹3,999' },
+        { name: 'Extra Brand Asset', priceUSD: '$29', priceINR: '₹2,499' },
+        { name: 'Rush Delivery (48h)', priceUSD: '$99', priceINR: '₹7,999' },
+        { name: 'Additional Consultation (30m)', priceUSD: '$39', priceINR: '₹2,999' }
+      ]
     }
   };
 
