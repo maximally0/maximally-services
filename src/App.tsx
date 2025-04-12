@@ -11,10 +11,8 @@ import Pricing from "./pages/Pricing";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
-import ExperimentalServices from "./pages/ExperimentalServices";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
-import AiServices from './pages/AiServices';
 import ChatbotDevelopment from './pages/ChatbotDevelopment';
 
 const queryClient = new QueryClient();
@@ -32,10 +30,8 @@ const App = () => (
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
-            <Route path="/experimentalservices" element={<ExperimentalServices />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
-            <Route path="/ai-services" element={<AiServices />} />
             <Route path="/services/chatbot-development-chandigarh" element={<ChatbotDevelopment />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
