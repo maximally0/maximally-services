@@ -56,153 +56,84 @@ const Pricing = () => {
 const categories: Record<string, PricingCategory> = {
     branding: {
       icon: <Star size={24} />,
-      title: '🧠 Branding',
+      title: '🎯 Brand Identity',
       color: 'text-purple-600',
       bgColor: 'bg-purple-50',
       items: [
-        { name: 'Logo Design', priceUSD: '$29', priceINR: '₹1,999' },
-        { name: 'Brand Kit (logo, fonts, colors)', priceUSD: '$69', priceINR: '₹4,999' },
-        { name: 'Business Card / Letterhead Design', priceUSD: '$15', priceINR: '₹999' },
+        { 
+          name: 'Logo Design',
+          description: 'Custom logo design with unlimited revisions and all file formats',
+          priceUSD: '$29', 
+          priceINR: '₹1,999' 
+        },
+        { 
+          name: 'Complete Brand Kit',
+          description: 'Logo, color palette, typography, brand guidelines, and social media assets',
+          priceUSD: '$69', 
+          priceINR: '₹4,999' 
+        },
         { name: 'Social Media Branding Pack', priceUSD: '$29', priceINR: '₹1,999' }
       ]
     },
     websites: {
       icon: <Globe size={24} />,
-      title: '🌐 Website Design',
+      title: '🚀 High-Converting Websites',
       color: 'text-blue-600',
       bgColor: 'bg-blue-50',
       items: [
-        { name: '1-Page Landing Website', priceUSD: '$69', priceINR: '₹4,999' },
-        { name: '5-Page Business Website', priceUSD: '$139', priceINR: '₹9,999' },
         { 
-          name: 'Basic E-commerce Website', 
-          description: 'Includes up to 5 products, basic payment gateway setup, responsive design',
-          priceUSD: '$239', 
-          priceINR: '₹17,999' 
-        },
-        { name: 'Website Maintenance (Monthly)', priceUSD: '$15/month', priceINR: '₹999/month' }
-      ]
-    },
-    social: {
-      icon: <Instagram size={24} />,
-      title: '📱 Social Media',
-      color: 'text-pink-600',
-      bgColor: 'bg-pink-50',
-      items: [
-        { name: 'Social Media Management (12 posts/month)', priceUSD: '$69/month', priceINR: '₹4,999/month' },
-        { name: 'Reel Creation (4/month)', priceUSD: '$39/month', priceINR: '₹2,999/month' },
-        { name: 'Instagram / Facebook Ads Management', priceUSD: '$59/month', priceINR: '₹3,999/month' },
-        { name: 'Influencer Setup (per campaign)', priceUSD: '$29', priceINR: '₹1,999' }
-      ]
-    },
-    seo: {
-      icon: <Search size={24} />,
-      title: '🔍 SEO',
-      color: 'text-green-600',
-      bgColor: 'bg-green-50',
-      items: [
-        { name: 'Basic SEO + Setup', priceUSD: '$39/month', priceINR: '₹2,999/month' },
-        { name: 'Blog Strategy + 4 Articles', priceUSD: '$59/month', priceINR: '₹3,999/month' },
-        { name: 'Google My Business Optimization', priceUSD: '$19', priceINR: '₹1,499' }
-      ]
-    },
-    ads: {
-      icon: <Target size={24} />,
-      title: '📢 Paid Ads',
-      color: 'text-orange-600',
-      bgColor: 'bg-orange-50',
-      items: [
-        { name: 'Google Ads Management', priceUSD: '$59/month', priceINR: '₹3,999/month' },
-        { name: 'Meta (FB/IG) Ads Management', priceUSD: '$49/month', priceINR: '₹3,499/month' },
-        { name: 'Landing Page for Ad Campaigns', priceUSD: '$39', priceINR: '₹2,999' }
-      ]
-    },
-    content: {
-      icon: <FileText size={24} />,
-      title: '✍️ Content Marketing',
-      color: 'text-yellow-600',
-      bgColor: 'bg-yellow-50',
-      items: [
-        { name: 'Blog Article (800–1000 words)', priceUSD: '$7', priceINR: '₹499' },
-        { name: 'Email Copy (1 campaign)', priceUSD: '$9', priceINR: '₹599' },
-        { name: 'Monthly Content Calendar', priceUSD: '$15', priceINR: '₹999' }
-      ]
-    },
-    video: {
-      icon: <Video size={24} />,
-      title: '🎬 Video Content',
-      color: 'text-red-600',
-      bgColor: 'bg-red-50',
-      items: [
-        { 
-          name: 'Template-Based Explainer (60 sec)', 
-          description: 'Includes template animation and professional voiceover',
-          priceUSD: '$99', 
-          priceINR: '₹6,999' 
-        },
-        { 
-          name: 'Custom Explainer Video', 
-          description: 'Custom animation with 2 revisions',
+          name: 'Performance-Optimized Website',
+          description: 'No-code website built for speed, SEO, and conversions',
           priceUSD: '$139', 
           priceINR: '₹9,999' 
         },
-        { name: 'Product Demo / Promo Video', priceUSD: '$59', priceINR: '₹3,999' },
         { 
-          name: 'Reels / Shorts (each)', 
-          description: 'Client provides footage. Includes captions and 1 revision',
-          priceUSD: '$15', 
-          priceINR: '₹999' 
+          name: 'E-commerce Website',
+          description: 'Conversion-focused online store with payment integration and analytics',
+          priceUSD: '$239', 
+          priceINR: '₹17,999' 
         }
       ]
     },
-    influencer: {
+    paidAds: {
+      icon: <Target size={24} />,
+      title: '🚀 Paid Ads Management',
+      color: 'text-orange-600',
+      bgColor: 'bg-orange-50',
+      items: [
+        { name: 'Meta/Facebook Ads', priceUSD: '$59/month', priceINR: '₹3,999/month' },
+        { name: 'Google Ads', priceUSD: '$59/month', priceINR: '₹3,999/month' }
+      ]
+    },
+    influencerMarketing: {
       icon: <Star size={24} />,
       title: '🌟 Influencer Marketing',
       color: 'text-purple-600',
       bgColor: 'bg-purple-50',
       items: [
         { 
-          name: 'Campaign Setup', 
-          description: 'Covers discovery, outreach, and briefing for up to 3 micro-influencers',
+          name: 'Influencer Discovery & Outreach',
+          description: 'We identify, contact, and manage collaborations with relevant influencers for your brand.',
           priceUSD: '$39', 
           priceINR: '₹2,999' 
         }
       ]
     },
-    addons: {
-      icon: <Zap size={24} />,
-      title: '⚡ Add-Ons',
-      color: 'text-violet-600',
-      bgColor: 'bg-violet-50',
-      items: [
-        { name: 'Extra Reel', priceUSD: '$15', priceINR: '₹999' },
-        { name: 'Extra Blog', priceUSD: '$7', priceINR: '₹499' },
-        { name: 'Email Campaign', priceUSD: '$9', priceINR: '₹599' }
-      ]
-    },
-    ai_consultancy: {
+    aiConsultancy: {
       icon: <Brain size={24} />,
-      title: '🤖 AI Consultancy',
+      title: '🤖 AI & Brand Consultancy',
       color: 'text-blue-600',
       bgColor: 'bg-blue-50',
       items: [
         { 
-          name: 'AI Integration Consultation',
-          description: 'We help businesses integrate AI into their workflows, from automating tasks to leveraging AI for smarter decision-making',
+          name: 'Strategic Brand Positioning with AI',
+          description: 'Leverage AI-powered insights to refine your brand strategy and messaging',
           priceUSD: '$50',
           priceINR: '₹3,750'
-        }
-      ]
-    },
-    brand_consultancy: {
-      icon: <Star size={24} />,
-      title: '✨ Brand Consultancy',
-      color: 'text-purple-600',
-      bgColor: 'bg-purple-50',
-      items: [
-        {
-          name: 'Brand Strategy Consultation',
-          description: 'We guide startups and businesses through brand strategy, including naming, positioning, visual identity, and go-to-market storytelling',
+        },
+        { 
+          name: 'AI Adoption Consultation',
+          description: 'We guide businesses on integrating AI into their workflows for automation and improved decision-making.',
           priceUSD: '$50',
           priceINR: '₹3,750'
         }
