@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
-import { Zap, Bot, Brain, Cog, Clock, Rocket } from 'lucide-react';
+import { Zap, Bot, Brain, Cog, Clock, Rocket, Check } from 'lucide-react';
 import { SEO } from '@/components/SEO';
 
 const services = [
