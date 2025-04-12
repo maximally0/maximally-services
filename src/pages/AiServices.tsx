@@ -110,7 +110,12 @@ export default function AiServices() {
             >
               <div 
                 className="pixel-card p-6 cursor-pointer relative overflow-hidden transition-all duration-300 hover:scale-105"
-                onClick={() => window.location.href = `/ai-services/${service.title.toLowerCase().replace(/\s+/g, '-')}`}
+                onClick={() => {
+                  const element = document.getElementById(`service-details-${index}`);
+                  if (element) {
+                    element.classList.toggle('translate-y-full');
+                  }
+                }}
               >
                 <div className="mb-4 text-maximally-blue group-hover:scale-110 transition-transform">{service.icon}</div>
                 <h3 className="font-press-start text-xl mb-2">{service.title}</h3>
@@ -118,15 +123,25 @@ export default function AiServices() {
                 <div className="font-jetbrains text-maximally-blue font-bold mb-4">
                   {service.price.usd} / {service.price.inr}
                 </div>
-                <div className="absolute bottom-0 left-0 w-full bg-maximally-blue text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform">
-                  <ul className="font-jetbrains text-sm space-y-2">
-                    {service.features?.map((feature, i) => (
-                      <li key={i} className="flex items-center gap-2">
-                        <Check size={16} />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
+                <div 
+                  id={`service-details-${index}`}
+                  className="absolute bottom-0 left-0 w-full bg-maximally-blue text-white p-4 transform translate-y-full transition-transform duration-300"
+                >
+                  <div className="font-jetbrains text-sm space-y-4">
+                    <h4 className="font-bold text-lg">What's Included:</h4>
+                    <ul className="space-y-2">
+                      {service.features?.map((feature, i) => (
+                        <li key={i} className="flex items-center gap-2">
+                          <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="pt-4 border-t border-white/20">
+                      <p className="font-bold">Starting at:</p>
+                      <p className="text-xl">{service.price.usd} / {service.price.inr}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </motion.div>
