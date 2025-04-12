@@ -1,12 +1,13 @@
 
-import React from 'react';
+import { lazy, Suspense } from 'react';
+import { SEO } from '@/components/SEO';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
+import ServicesSection from '@/components/ServicesSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CtaSection from '@/components/CtaSection';
 import FooterSection from '@/components/FooterSection';
-import { SEO } from '@/components/SEO';
 
 const Index = () => {
   const structuredData = {
@@ -67,11 +68,13 @@ const Index = () => {
       <div className="min-h-screen w-full overflow-x-hidden max-w-[100vw]">
         <Navbar />
         <main className="flex flex-col w-full">
-          <HeroSection />
-          <FeaturesSection />
-          <ServicesSection />
-          <TestimonialsSection />
-          <CtaSection />
+          <Suspense fallback={<div className="h-screen flex items-center justify-center">Loading...</div>}>
+            <HeroSection />
+            <FeaturesSection />
+            <ServicesSection />
+            <TestimonialsSection />
+            <CtaSection />
+          </Suspense>
         </main>
         <FooterSection />
       </div>
